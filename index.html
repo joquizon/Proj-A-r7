@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="session1016.js"></script>
+		<link rel="stylesheet" href="session1016.css">
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+	<head>
+	<body>
+<!-- there should be  different buttons that advance at different increments advance by 2 by 3 by 4 etc.  -->
+		<div id="botcontainer">
+			<div class="notifpos" >
+				<p id="notif">
+					ACTIVATING
+				</p>
+			</div>
+		
+			<img id="boxer" src="boxer.svg">
+			<div id="crosscontain">
+				<img class="crossesTop" id="crossA" src="cross.svg">
+				<p class="crosslabs" id="cAl">
+					0 / 0
+				</p>
+				
+				<img class="crossesTop" id="crossB" src="cross.svg">
+				<p class="crosslabs" id="cBl">
+					0 / 0
+				</p>
+
+				<img class="crossesTop" id="crossC" src="cross.svg">
+				<p class="crosslabs" id="cCl">
+					0 / 0
+				</p>
+
+
+				<img class="crossesMid" id="crossAM" src="cross.svg">
+				<p class="crosslabsM" id="cAMl">
+					0 / 0
+				</p>
+				
+				<img class="crossesMid" id="crossBM" src="cross.svg">
+				<p class="crosslabsM" id="cBMl">
+					0 / 0
+				</p>
+
+
+				<img class="crossesMid" id="crossCM" src="cross.svg">
+				<p class="crosslabsM" id="cCMl">
+					0 / 0
+				</p>
+
+				<img class="crossesBott" id="crossAB" src="cross.svg">
+				<p class="crosslabsB" id="cABl">
+					0 / 0
+				</p>
+
+
+				<img class="crossesBott" id="crossBB" src="cross.svg">
+				<p class="crosslabsB" id="cBBl">
+					0 / 0
+				</p>
+				<img class="crossesBott" id="crossCB" src="cross.svg">
+				<p class="crosslabsB" id="cCBl">
+					0 / 0
+				</p>
+			</div>
+			
+			<svg  id="markermock" x="0px" y="0px" width="75%" viewBox="0 0 960 540" style="enable-background:new 0 0 960 540;" xml:space="preserve">
+			<g id="Layer_2">
+				<rect class="mockrect" id="mr1" x="438.5" y="114.5" style="opacity:0.29; fill:#3E9FAD;" width="55" height="27"/>
+				<rect class="mockrect" x="472" y="130" style="opacity:0.29;fill:#3E9FAD;" width="47.5" height="44.5"/>
+				<rect class="mockrect" x="381.667" y="152.666" style="opacity:0.29;fill:#3E9FAD;" width="96.833" height="23.634"/>
+				<rect class="mockrect" x="411.667" y="38.5" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="68.667"/>
+				<rect class="mockrect" x="424.667" y="32.5" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="68.667"/>
+				<rect class="mockrect" x="408.833" y="117.167" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="24.5"/>
+				<rect class="mockrect" x="418.083" y="120.75" style="opacity:0.29;fill:#3E9FAD;" width="14.167" height="15.167"/>
+				<rect class="mockrect" x="512.833" y="152.166" style="opacity:0.29;fill:#3E9FAD;" width="19.667" height="61.584"/>
+				<rect class="mockrect" x="552.917" y="162.167" style="opacity:0.29;fill:#3E9FAD;" width="56.583" height="40"/>
+				<rect class="mockrect" x="429.583" y="128.5" style="opacity:0.29;fill:#3E9FAD;" width="14.667" height="14"/>
+				<rect class="mockrect" x="395.668" y="157.916" style="opacity:0.29;fill:#3E9FAD;" width="96.833" height="23.633"/>
+				<rect class="mockrect" x="467.5" y="133.367" style="opacity:0.29;fill:#3E9FAD;" width="23.999" height="23.633"/>
+				<rect class="mockrect" x="464.267" y="153.367" style="opacity:0.29;fill:#3E9FAD;" width="17.766" height="17.4"/>
+				<rect class="mockrect" x="411.333" y="220.2" style="opacity:0.29;fill:#3E9FAD;" width="36.833" height="23.966"/>
+				<rect class="mockrect" x="422.5" y="236.034" style="opacity:0.29;fill:#3E9FAD;" width="36.833" height="23.966"/>
+				<rect class="mockrect" x="408.083" y="233.534" style="opacity:0.29;fill:#3E9FAD;" width="18.417" height="23.966"/>
+				<rect class="mockrect" x="412.958" y="250.517" style="opacity:0.29;fill:#3E9FAD;" width="18.416" height="37.65"/>
+				<rect class="mockrect" x="429.625" y="250.35" style="opacity:0.29;fill:#3E9FAD;" width="18.417" height="37.651"/>
+				<rect class="mockrect" x="537.292" y="251.35" style="opacity:0.29;fill:#3E9FAD;" width="28.063" height="47.295"/>
+			</g>
+			</svg>
+
+
+
+			<img id="3quartv" class="robotgifs" src="gifs/fV/fV11.gif">
+			<img class="maedabox" src="maedabox.svg">	
+			
+			<img class="maedabox2" src="maedabox.svg">	
+			
+			<img class="maedabox2" src="maedabox.svg">	
+			
+			<img class="maedabox2" src="maedabox.svg">	
+			
+
+
+			<div class="headmarker">
+				<div class="textcontain">
+					<span id="closer">
+							x<br>
+
+					</span><br>
+
+					<p class="bottext" id="headtext">
+						<span id="inst">
+							SCROLL DOWN
+						</span>
+						head V2\par<br>
+						set1\par<br>
+						1bttm.eye.base\par<br>
+						2 crown.base.*\par<br>
+						3 ear.base\par<br>
+						4 sde.pnl.+nck.bse\par<br>
+						5 ant.base\par<br>
+						6 top.eye.base\par<br>
+						7 top.frnt.crwn.base.1\par<br>
+						8 top.frnt.crwn.base.2\par<br>
+						9 top.frnt.crwn.base.3\par<br>
+						0 top.frnt.crwn.base.4 \par<br>
+						\par<br>
+						1 top.frnt.crwn.base5\par<br>
+						2 top.frnt.crwn.base6\par<br>
+						3 bott.frnt.crwn.side1\par<br>
+						4 bott.frnt.crwn.side2\par<br>
+						5 bott.frnt.crwn.side3\par<br>
+						7 bott.frnt.crwn.side4\par<br>
+						8 bott.frnt.crwn.side5\par<br>
+						9 bott.frnt.crwn.side6\par<br>
+						\par<br>
+						1 top.rear.crwn.base1\par<br>
+						2 top.rear.crwn.base2\par<br>
+						3 top.rear.crwn.base3\par<br>
+						4 top.rear.crwn.base4\par<br>
+						5 top.rear.crwn.base5\par<br>
+						6 top.rear.crwn.base6\par<br>
+						7 bott.rear.crwn.base1\par<br>
+						8 bott.rear.crwn.base2\par<br>
+						9 bott.rear.crwn.base3\par<br>
+						\par<br>
+						0 bott.rear.crwn.base4\par<br>
+						\par<br>
+						1 bott.rear.crwn.base5\par<br>
+						2 bott.rear.crwn.base6\par<br>
+						3 eardrm\par<br>
+						4 top.ear.lbe.pnl.1\par<br>
+						5 top.ear.lbe.pnl.2\par<br>
+						6 top.ear.lbe.pnl.3\par<br>
+						7 top.ear.lbe.pnl.4\par<br>
+						8 top.ear.lbe.pnl.5\par<br>
+						9 top.ear.lbe.pnl.6\par<br>
+						0 top.ear.lbe.pnl.7\par<br>
+						\par<br>
+						1 top.ear.lbe.pnl.8\par<br>
+						2 top.ear.lbe.pnl.9\par<br>
+						3 top.ear.lbe.pnl.10\par<br>
+						4 top.ear.lbe.pnl.11\par<br>
+						5 top.ear.lbe.pnl.12\par<br>
+						6 top.ear.lbe.pnl.13\par<br>
+						7 top.ear.lbe.pnl.14\par<br>
+						8 top.ear.lbe.pnl.15\par<br>
+						9 top.ear.lbe.pnl.16\par<br>
+						\par<br>
+						1 bott.ear.lbe.pnl.1\par<br>
+						2 bott.ear.lbe.pnl.2\par<br>
+						3 bott.ear.lbe.pnl.3\par<br>
+						4 bott.ear.lbe.pnl.4\par<br>
+						5 bott.ear.lbe.pnl.5\par<br>
+						6 bott.ear.lbe.pnl.6\par<br>
+						7 bott.ear.lbe.pnl.7\par<br>
+						8 bott.ear.lbe.pnl.8\par<br>
+						\par<br>
+						\par<br>
+						\par<br>
+						9 bott.ear.lbe.pnl.9\par<br>
+						0 bott.ear.lbe.pnl.10\par<br>
+						\par<br>
+						1 bott.ear.lbe.pnl.11\par<br>
+						2 bott.ear.lbe.pnl.12\par<br>
+						3 bott.ear.lbe.pnl.13\par<br>
+						4 bott.ear.lbe.pnl.14\par<br>
+						5 bott.ear.lbe.pnl.15\par<br>
+						6 aur.top.pnl.1\par<br>
+						7 aur.top.pnl.2\par<br>
+						8 aur.top.pnl.3\par<br>
+						9 aur.top.pnl.4\par<br>
+						0 aur.top.pnl.5\par<br>
+						\par<br>
+						1 aur.top.pnl.6\par<br>
+						2 aur.top.pnl.7\par<br>
+						3 aur.top.pnl.8\par<br>
+						4 aur.top.pnl.9\par<br>
+						5 aur.top.pnl.10\par<br>
+						6 aur.top.pnl.11\par<br>
+						7 aur.top.pnl.12\par<br>
+						8 aur.top.pnl.13\par<br>
+						9 aur.top.pnl.14\par<br>
+						0 aur.top.pnl.15\par<br>
+						\par<br>
+						1 aur.bott.pnl.1\par<br>
+						2 aur.bott.pnl.2\par<br>
+						3 aur.bott.pnl.3\par<br>
+						4 aur.bott.pnl.4\par<br>
+						5 aur.bott.pnl.5\par<br>
+						6 aur.bott.pnl.6\par<br>
+						\par<br>
+						6 aur.bott.pnl.7\par<br>
+						6 aur.bott.pnl.8\par<br>
+						6 aur.bott.pnl.9\par<br>
+						6 aur.bott.pnl.10\par<br>
+						\par<br>
+						1 aur.bott.pnl.11\par<br>
+						2 aur.bott.pnl.12\par<br>
+						3 aur.bott.pnl.13\par<br>
+						4 aur.bott.pnl.14\par<br>
+						5 aur.bott.pnl.15\par<br>
+						6 aur.bott.pnl.16\par<br>
+						\par<br>
+						1 aur.2.top.pnl.1\par<br>
+						2 aur.2.top.pnl.2\par<br>
+						3 aur.2.top.pnl.3\par<br>
+						4 aur.2.top.pnl.4\par<br>
+						5 aur.2.top.pnl.5\par<br>
+						6 aur.2.top.pnl.6\par<br>
+						7 aur.2.top.pnl.7\par<br>
+						8 aur.2.top.pnl.8\par<br>
+						9 aur.2.top.pnl.9\par<br>
+						0 aur.2.top.pnl.10\par<br>
+						\par<br>
+						1 aur.2.top.pnl.11\par<br>
+						2 aur.2.top.pnl.12\par<br>
+						3 aur.2.top.pnl.13\par<br>
+						4 aur.2.top.pnl.14\par<br>
+						5 aur.2.top.pnl.15\par<br>
+						6 aur.2.top.pnl.16\par<br>
+						7 aur.2.bott.pnl.1\par<br>
+						\par<br>
+						8 aur.2.bott.pnl.2\par<br>
+						9 aur.2.bott.pnl.3\par<br>
+						0 aur.2.bott.pnl.4\par<br>
+						\par<br>
+						1 aur.2.bott.pnl.5\par<br>
+						2 aur.2.bott.pnl.6\par<br>
+						3 aur.2.bott.pnl.7\par<br>
+						4 aur.2.bott.pnl.8\par<br>
+						5 aur.2.bott.pnl.9\par<br>
+						6 aur.2.bott.pnl.10\par<br>
+						7 aur.2.bott.pnl.11\par<br>
+						8 aur.2.bott.pnl.12\par<br>
+						9 aur.2.bott.pnl.13\par<br>
+						0 aur.2.bott.pnl.14\par<br>
+						\par<br>
+						1 aur.2.bott.pnl.15\par<br>
+						2 ant.top.tip\par<br>
+						3 ant.top.seg\par<br>
+						4 ant.top.seg2.1\par<br>
+						5 ant.top.seg2.2\par<br>
+						6 ant.top.seg2.3\par<br>
+						7 ant.top.seg2.4\par<br>
+						8 ant.top.seg2.5\par<br>
+						9 ant.top.seg2.6\par<br>
+						0 ant.top.seg2.7\par<br>
+						\par<br>
+						1 ant.top.seg2.8\par<br>
+						2 ant.top.seg2.9\par<br>
+						3 ant.top.seg2.10\par<br>
+						4 ant.top.seg2.11\par<br>
+						5 ant.top.seg3.1\par<br>
+						6 ant.top.seg3.2\par<br>
+						7 ant.top.seg3.3\par<br>
+						8 ant.top.seg3.4\par<br>
+						9 ant.top.seg3.5\par<br>
+						0 ant.top.seg3.6\par<br>
+						\par<br>
+						1 ant.top.seg3.7\par<br>
+						2 ant.top.seg3.8\par<br>
+						3 ant.top.seg3.9\par<br>
+						4 ant.top.seg3.10\par<br>
+						5 ant.top.seg3.11\par<br>
+						6 ant.top.seg4.1\par<br>
+						7 ant.top.seg4.2\par<br>
+						8 ant.top.seg4.3\par<br>
+						9 ant.top.seg4.4\par<br>
+						0 ant.top.seg4.5\par<br>
+						\par<br>
+						1 ant.top.seg4.6\par<br>
+						2 ant.top.seg4.7\par<br>
+						3 ant.top.seg4.8\par<br>
+						4 ant.top.seg4.9\par<br>
+						5 ant.top.seg4.10\par<br>
+						6 ant.top.seg4.11\par<br>
+						7 ant.top.seg5.1\par<br>
+						8 ant.top.seg5.2\par<br>
+						9 ant.top.seg5.3\par<br>
+						0 ant.top.seg5.4\par<br>
+						\par<br>
+						1 ant.top.seg5.5\par<br>
+						2 ant.top.seg5.6\par<br>
+						3 ant.top.seg5.7\par<br>
+						4 ant.top.seg5.8\par<br>
+						5 ant.top.seg5.9\par<br>
+						6 ant.top.seg5.10\par<br>
+						7 ant.top.seg5.11\par<br>
+						8 ant.top.seg6.1\par<br>
+						9 ant.top.seg6.2\par<br>
+						0 ant.top.seg6.3\par<br>
+						\par<br>
+						1 ant.top.seg6.4\par<br>
+						2 ant.top.seg6.5\par<br>
+						3 ant.top.seg6.6\par<br>
+						4 ant.top.seg6.7\par<br>
+						5 ant.top.seg6.8\par<br>
+						6 ant.top.seg6.9\par<br>
+						7 ant.top.seg6.10\par<br>
+						8 ant.top.seg6.11\par<br>
+						\par<br>
+						1 ant.bott.tip\par<br>
+						2 ant.bott.seg1.1\par<br>
+						3 ant.bott.seg1.2\par<br>
+						4 ant.bott.seg1.3\par<br>
+						5 ant.bott.seg1.4\par<br>
+						6 ant.bott.seg1.5\par<br>
+						7 ant.bott.seg1.6\par<br>
+						8 ant.bott.seg1.7\par<br>
+						9 ant.bott.seg1.8\par<br>
+						0 ant.bott.seg1.9\par<br>
+						\par<br>
+						1 ant.bott.seg1.10\par<br>
+						2 ant.bott.seg1.11\par<br>
+						3 ant.bott.seg2.1\par<br>
+						4 ant.bott.seg2.2\par<br>
+						5 ant.bott.seg2.3\par<br>
+						6 ant.bott.seg2.4\par<br>
+						7 ant.bott.seg2.5\par<br>
+						8 ant.bott.seg2.6\par<br>
+						9 ant.bott.seg2.7\par<br>
+						0 ant.bott.seg2.8\par<br>
+						\par<br>
+						1 ant.bott.seg2.9\par<br>
+						2 ant.bott.seg2.10\par<br>
+						3 ant.bott.seg2.11\par<br>
+						4 ant.bott.seg3.1\par<br>
+						5 ant.bott.seg3.2\par<br>
+						6 ant.bott.seg3.3\par<br>
+						7 ant.bott.seg3.4\par<br>
+						8 ant.bott.seg3.5\par<br>
+						9 ant.bott.seg3.6\par<br>
+						0 ant.bott.seg3.7\par<br>
+						\par<br>
+						1 ant.bott.seg3.8\par<br>
+						2 ant.bott.seg3.9\par<br>
+						3 ant.bott.seg3.10\par<br>
+						4 ant.bott.seg3.11\par<br>
+						5 ant.bott.seg4.1\par<br>
+						6 ant.bott.seg4.2\par<br>
+						7 ant.bott.seg4.3\par<br>
+						8 ant.bott.seg4.4\par<br>
+						9 ant.bott.seg4.5\par<br>
+						0 ant.bott.seg4.6\par<br>
+						\par<br>
+						1 ant.bott.seg4.7\par<br>
+						2 ant.bott.seg4.8\par<br>
+						3 ant.bott.seg4.9\par<br>
+						4 ant.bott.seg4.10\par<br>
+						5 ant.bott.seg4.11\par<br>
+						6 ant.bott.seg5.1\par<br>
+						7 ant.bott.seg5.2\par<br>
+						8 ant.bott.seg5.3\par<br>
+						9 ant.bott.seg5.4\par<br>
+						0 ant.bott.seg5.5\par<br>
+						\par<br>
+						1 ant.bott.seg5.6\par<br>
+						2 ant.bott.seg5.7\par<br>
+						3 ant.bott.seg5.8\par<br>
+						4 ant.bott.seg5.9\par<br>
+						5 ant.bott.seg5.10\par<br>
+						6 ant.bott.seg5.11\par<br>
+						7 ant.bott.seg6.1\par<br>
+						8 ant.bott.seg6.2\par<br>
+						9 ant.bott.seg6.3\par<br>
+						0 ant.bott.seg6.4\par<br>
+						\par<br>
+						1 ant.bott.seg6.5\par<br>
+						2 ant.bott.seg6.6\par<br>
+						3 ant.bott.seg6.7\par<br>
+						4 ant.bott.seg6.8\par<br>
+						5 ant.bott.seg6.9\par<br>
+						6 ant.bott.seg6.10\par<br>
+						7 ant.bott.seg6.11\par<br>
+						\par<br>
+						1 eye.pte.flter\par<br>
+						2 eye.pte.pnl1.1\par<br>
+						3 eye.pte.pnl1.2\par<br>
+						4 eye.pte.pnl2.1\par<br>
+						5 eye.pte.pnl2.2\par<br>
+						6 eye.pte.pnl2.3\par<br>
+						7 eye.pte.pnl2.4\par<br>
+						8 eye.pte.pnl3.1\par<br>
+						9 eye.pte.pnl3.1\par<br>
+						0 eye.pte.pnl3.1\par<br>
+						\par<br>
+						1 bott.eye.pte\par<br>
+						2 bott.irs.top\par<br>
+						3 bott.irs.bott.\par<br>
+						4 bott.irs2.top\par<br>
+						5 bott.irs2.bott\par<br>
+						6 bott.irs3.top\par<br>
+						7 bott.irs3.bott\par<br>
+						8 bott.ble.ebl.1\par<br>
+						9 bott.ble.ebl.2\par<br>
+						0 bott.ble.ebl.3\par<br>
+						\par<br>
+						1 bott.ble.ebl.4\par<br>
+						2 bott.ble.ebl.5\par<br>
+						3 bott.ble.ebl.6\par<br>
+						4 bott.ble.ebl.7\par<br>
+						5 bott.ble.ebl.8\par<br>
+						6 bott.ble.ebl.9\par<br>
+						7 bott.ble.ebl.10\par<br>
+						8 bott.ble.ebl.11\par<br>
+						\par<br>
+						1 top.eye.cse1\par<br>
+						2 bott.eye.cse1\par<br>
+						3 top.eye.cse2\par<br>
+						4 bott.eye.cse2\par<br>
+						5 frnt.eye.cse3\par<br>
+						6 bck.eye.cse3\par<br>
+						7 top.eye.cse4\par<br>
+						8 bott.eye.cse4\par<br>
+						\par<br>
+						1 bck.eye.cse1.1\par<br>
+						2 bck.eye.cse1.2\par<br>
+						3 bck.eye.cse1.3\par<br>
+						4 bck.eye.cse2.1\par<br>
+						5 bck.eye.cse2.2\par<br>
+						6 bck.eye.cse2.3\par<br>
+						7 bck.eye.cse3.1\par<br>
+						8 bck.eye.cse3.2\par<br>
+						9 bck.eye.cse3.3\par<br>
+						\par<br>
+						1 bck.eye.cse4.1\par<br>
+						2 bck.eye.cse4.2\par<br>
+						3 bck.eye.cse5.1\par<br>
+						4 bck.eye.cse5.2\par<br>
+						5 top.eye.irs\par<br>
+						6 top.ble.eye.pnl1\par<br>
+						7 top.ble.eye.pnl2\par<br>
+						8 top.ble.eye.pnl3\par<br>
+						9 top.ble.eye.pnl4\par<br>
+						0 top.ble.eye.pnl5\par<br>
+						\par<br>
+						1 top.ble.eye.pnl6\par<br>
+						2 top.ble.eye.pnl7\par<br>
+						3 top.ble.eye.pnl8\par<br>
+						4 top.ble.eye.pnl9\par<br>
+						5 top.ble.eye.pnl10\par<br>
+						6 top.ble.eye.pnl11\par<br>
+						7 top.ble.eye.pnl12\par<br>
+						\par<br>
+						1 top.eye.cseA.1\par<br>
+						2 top.eye.cseA.2\par<br>
+						3 top.eye.cseA.3\par<br>
+						4 top.eye.cseA.4\par<br>
+						5 top.eye.cseA.5\par<br>
+						6 top.eye.cseA.6\par<br>
+						7 top.eye.cseA.7\par<br>
+						8 top.eye.cseA.8\par<br>
+						9 top.eye.cseA.9\par<br>
+						0 top.eye.cseA.10\par<br>
+						\par<br>
+						1 top.eye.cseA.11\par<br>
+						2 top.eye.cseA.12\par<br>
+						3 top.eye.cseB.1\par<br>
+						4 top.eye.cseB.2\par<br>
+						5 top.eye.cseB.3\par<br>
+						6 top.eye.cseB.4\par<br>
+						7 top.eye.cseB.5\par<br>
+						8 top.eye.cseB.6\par<br>
+						9 top.eye.cseB.7\par<br>
+						0 top.eye.cseB.8\par<br>
+						\par<br>
+						1 top.eye.cseB.9\par<br>
+						2 top.eye.cseB.10\par<br>
+						3 top.eye.cseB.11\par<br>
+						4 top.eye.cseB.12\par<br>
+						5 top.eye.cseC\par<br>
+						6 top.eye.cseD\par<br>
+						7 top.eye.cseE.1\par<br>
+						8 top.eye.cseE.2\par<br>
+						9 top.eye.cseE.3\par<br>
+						\par<br>
+						1 top.eye.cseF.1\par<br>
+						2 top.eye.cseF.2\par<br>
+						3 top.eye.cseF.3\par<br>
+						4 top.eye.cseF.4\par<br>
+						5 top.eye.cseF.5\par<br>
+						6 top.eye.cseF.6\par<br>
+						7 top.eye.cseF.7\par<br>
+						8 top.eye.cseF.8\par<br>
+						9 top.eye.cseF.9\par<br>
+						0 top.eye.cseF.10\par<br>
+						\par<br>
+						1 top.eye.cseF.11\par<br>
+						2 top.eye.cseF.12\par<br>
+						3 top.eye.cseG.1\par<br>
+						4 top.eye.cseG.2\par<br>
+						5 top.eye.cseH.1\par<br>
+						6 top.eye.cseH.2\par<br>
+						7 top.eye.plteA.1\par<br>
+						8 top.eye.plteA.2\par<br>
+						9 top.eye.plteB.1\par<br>
+						0 top.eye.plteB.2\par<br>
+						\par<br>
+						1 top.eye.plteB.3\par<br>
+						2 top.eye.plteB.4\par<br>
+						3 top.eye.plteB.5\par<br>
+						4 top.hd.plte1.1\par<br>
+						5 top.hd.plte1.2\par<br>
+						6 top.hd.plte1.3\par<br>
+						7 top.hd.plte1.4\par<br>
+						8 top.hd.plte1.5\par<br>
+						9 top.hd.plte1.6\par<br>
+						0 top.hd.plte1.7\par<br>
+						\par<br>
+						1 top.hd.plte1.8\par<br>
+						2 hd.plte2.1\par<br>
+						3 hd.plte2.2\par<br>
+						4 hd.plte2.3\par<br>
+						5 hd.plte2.4\par<br>
+						6 hd.bse.pnl.1\par<br>
+						7 hd.bse.pnl.2\par<br>
+						8 hd.bse.pnl.3\par<br>
+						9 hd.bse.pnl.4\par<br>
+						0 hd.bse.pnl.5\par<br>
+						\par<br>
+						1 hd.bse.pnl.6\par<br>
+					</p>
+				</div>	
+			</div>		
+		</div>
+		<div id="infocontainer">
+			<div id="infotag">
+			
+				<p id="title">
+					CAM// NH - 0626<br>
+					PROJ// A-R7<br>
+					SESSION// 626-1006y08<br>
+				</p>		
+				<p id="date">
+				</p>
+			</div>
+			<div id="mousediag">
+				<p id="yaxtext">
+					y * READ >> 0
+				</p>
+				<p id="xaxtext">
+					x * READ >> 0
+				</p>
+				<div id="xax">
+					<img id="msetrack" src="msetrack.svg">
+				</div>
+			</div>
+			<div class="mousediag2a">
+				<div id="labelhold">
+					<p class="md2lab" id="diaglabel">
+						MSe*HIST Trckng
+					</p>
+				</div>
+
+				<div class="ydelays">
+					<p class="md2lab">
+						Ya
+					</p>
+					<img class="ydymarkers" id="ydy1" src="ydymarker.svg">
+				</div>
+				
+				<div class="ydelays">
+					<p class="md2lab">
+						Yb
+					</p>
+					<img class="ydymarkers" id="ydy2" src="ydymarker.svg">
+				</div>
+				<div class="ydelays">
+					<p class="md2lab">
+						Yc
+					</p>
+					<img class="ydymarkers" id="ydy3" src="ydymarker.svg">
+				</div>
+				<div class="ydelays" >
+					<p class="md2lab">
+						Yd
+					</p>
+					<img class="ydymarkers" id="ydy4" src="ydymarker.svg">
+				</div>
+				<div class="ydelays">
+					<p class="md2lab">
+						Ye
+					</p>
+					<img class="ydymarkers" id="ydy5" src="ydymarker.svg">
+				</div>
+
+				<div class="ydelays">
+					<p class="md2lab">
+						Xa
+					</p>
+					<img class="ydymarkers" id="ydy6" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy7" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy8" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy9" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy10" src="xdymarker.svg">
+				</div>
+				
+				<div id="msd2switch">
+					<img src="sliderbutt.svg">
+				</div>
+				
+				<div class="mouseloghold2">
+					<p id="mselogger">
+							<span>000.00/</span><br><span>000.00</span><br>
+					</p>
+				</div>	
+				
+			</div>
+
+
+
+			<div id="mapcontain">
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button2.svg">
+					<img class="taggerbuttons" src="button2.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button4.svg">
+					<img class="taggerbuttons" src="button4.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button.svg">
+					<img class="taggerbuttons" src="button.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button3.svg">
+					<img class="taggerbuttons" src="button3.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="buttonh.svg">
+					<img class="taggerbuttons" src="buttonb.svg">
+				</div>
+			</div>
+		</div>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
