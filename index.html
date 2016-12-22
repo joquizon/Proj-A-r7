@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="session1016.js"></script>
+		<script src="jquery.inview.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<link rel="stylesheet" href="session1016.css">
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
 	<head>
 	<body>
-<!-- there should be  different buttons that advance at different increments advance by 2 by 3 by 4 etc.  -->
+		<!-- there should be  different buttons that advance at different increments advance by 2 by 3 by 4 etc.  -->
+
+		<div id="infocontainer">
+			<img id="logo" src="logo.svg">
+			<div id="infotag">
+				<p id="title">
+							PROJ// A-R7 SESSION// 610-y04/08
+				 <br>				
+				<span id="draggbutt">
+						Drag me------
+					</span>
+					<span id="resizebutt">
+						resize-------
+					</span>
+					<span id="revertbutt">
+						revert-------
+					</span>
+									<span id="revertbutt2">
+						revert2-------
+					</span></p>
+			</div><p id="date">
+				</p>
+		</div>
+
+
 		<div id="botcontainer">
+			<div id="lander">
+			</div>
 			<div class="notifpos" >
 				<p id="notif">
 					ACTIVATING
 				</p>
 			</div>
-		
+
+			<img id="mousebutt" src="mouse.svg">
 			<img id="boxer" src="boxer.svg">
 			<div id="crosscontain">
 				<img class="crossesTop" id="crossA" src="cross.svg">
@@ -68,41 +97,398 @@
 			</div>
 			
 			<svg  id="markermock" x="0px" y="0px" width="75%" viewBox="0 0 960 540" style="enable-background:new 0 0 960 540;" xml:space="preserve">
-			<g id="Layer_2">
-				<rect class="mockrect" id="mr1" x="438.5" y="114.5" style="opacity:0.29; fill:#3E9FAD;" width="55" height="27"/>
-				<rect class="mockrect" x="472" y="130" style="opacity:0.29;fill:#3E9FAD;" width="47.5" height="44.5"/>
-				<rect class="mockrect" x="381.667" y="152.666" style="opacity:0.29;fill:#3E9FAD;" width="96.833" height="23.634"/>
-				<rect class="mockrect" x="411.667" y="38.5" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="68.667"/>
-				<rect class="mockrect" x="424.667" y="32.5" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="68.667"/>
-				<rect class="mockrect" x="408.833" y="117.167" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="24.5"/>
-				<rect class="mockrect" x="418.083" y="120.75" style="opacity:0.29;fill:#3E9FAD;" width="14.167" height="15.167"/>
-				<rect class="mockrect" x="512.833" y="152.166" style="opacity:0.29;fill:#3E9FAD;" width="19.667" height="61.584"/>
-				<rect class="mockrect" x="552.917" y="162.167" style="opacity:0.29;fill:#3E9FAD;" width="56.583" height="40"/>
-				<rect class="mockrect" x="429.583" y="128.5" style="opacity:0.29;fill:#3E9FAD;" width="14.667" height="14"/>
-				<rect class="mockrect" x="395.668" y="157.916" style="opacity:0.29;fill:#3E9FAD;" width="96.833" height="23.633"/>
-				<rect class="mockrect" x="467.5" y="133.367" style="opacity:0.29;fill:#3E9FAD;" width="23.999" height="23.633"/>
-				<rect class="mockrect" x="464.267" y="153.367" style="opacity:0.29;fill:#3E9FAD;" width="17.766" height="17.4"/>
-				<rect class="mockrect" x="411.333" y="220.2" style="opacity:0.29;fill:#3E9FAD;" width="36.833" height="23.966"/>
-				<rect class="mockrect" x="422.5" y="236.034" style="opacity:0.29;fill:#3E9FAD;" width="36.833" height="23.966"/>
-				<rect class="mockrect" x="408.083" y="233.534" style="opacity:0.29;fill:#3E9FAD;" width="18.417" height="23.966"/>
-				<rect class="mockrect" x="412.958" y="250.517" style="opacity:0.29;fill:#3E9FAD;" width="18.416" height="37.65"/>
-				<rect class="mockrect" x="429.625" y="250.35" style="opacity:0.29;fill:#3E9FAD;" width="18.417" height="37.651"/>
-				<rect class="mockrect" x="537.292" y="251.35" style="opacity:0.29;fill:#3E9FAD;" width="28.063" height="47.295"/>
-			</g>
+				<g id="Layer_2">
+					<rect class="mockrect" id="mr1" x="438.5" y="114.5" style="opacity:0.29; fill:#3E9FAD;" width="55" height="27"/>
+					<rect class="mockrect" x="472" y="130" style="opacity:0.29;fill:#3E9FAD;" width="47.5" height="44.5"/>
+					<rect class="mockrect" x="381.667" y="152.666" style="opacity:0.29;fill:#3E9FAD;" width="96.833" height="23.634"/>
+					<rect class="mockrect" x="411.667" y="38.5" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="68.667"/>
+					<rect class="mockrect" x="424.667" y="32.5" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="68.667"/>
+					<rect class="mockrect" x="408.833" y="117.167" style="opacity:0.29;fill:#3E9FAD;" width="11.833" height="24.5"/>
+					<rect class="mockrect" x="418.083" y="120.75" style="opacity:0.29;fill:#3E9FAD;" width="14.167" height="15.167"/>
+					<rect class="mockrect" x="512.833" y="152.166" style="opacity:0.29;fill:#3E9FAD;" width="19.667" height="61.584"/>
+					<rect class="mockrect" x="552.917" y="162.167" style="opacity:0.29;fill:#3E9FAD;" width="56.583" height="40"/>
+					<rect class="mockrect" x="429.583" y="128.5" style="opacity:0.29;fill:#3E9FAD;" width="14.667" height="14"/>
+					<rect class="mockrect" x="395.668" y="157.916" style="opacity:0.29;fill:#3E9FAD;" width="96.833" height="23.633"/>
+					<rect class="mockrect" x="467.5" y="133.367" style="opacity:0.29;fill:#3E9FAD;" width="23.999" height="23.633"/>
+					<rect class="mockrect" x="464.267" y="153.367" style="opacity:0.29;fill:#3E9FAD;" width="17.766" height="17.4"/>
+					<rect class="mockrect" x="411.333" y="220.2" style="opacity:0.29;fill:#3E9FAD;" width="36.833" height="23.966"/>
+					<rect class="mockrect" x="422.5" y="236.034" style="opacity:0.29;fill:#3E9FAD;" width="36.833" height="23.966"/>
+					<rect class="mockrect" x="408.083" y="233.534" style="opacity:0.29;fill:#3E9FAD;" width="18.417" height="23.966"/>
+					<rect class="mockrect" x="412.958" y="250.517" style="opacity:0.29;fill:#3E9FAD;" width="18.416" height="37.65"/>
+					<rect class="mockrect" x="429.625" y="250.35" style="opacity:0.29;fill:#3E9FAD;" width="18.417" height="37.651"/>
+					<rect class="mockrect" x="537.292" y="251.35" style="opacity:0.29;fill:#3E9FAD;" width="28.063" height="47.295"/>
+				</g>
 			</svg>
+			<div id="mainrobotcontainer">
+				<img id="top" class="robotgifsL4" src="gifs/3q/top.gif">
+					<img id="top1" class="robotgifsL4" src="gifs/3q/top13.gif">
+					<img id="top2" class="robotgifsL4" src="gifs/3q/top1.gif">
+					<img id="top3" class="robotgifsL4" src="gifs/3q/top2.gif">
+					<img id="top4" class="robotgifsL4" src="gifs/3q/top3.gif">
+					<img id="top5" class="robotgifsL4" src="gifs/3q/top4.gif">
+					<img id="top6" class="robotgifsL4" src="gifs/3q/top5.gif">
+					<img id="top7" class="robotgifsL4" src="gifs/3q/top6.gif">
+					<img id="top8" class="robotgifsL4" src="gifs/3q/top7.gif">
+					<img id="top9" class="robotgifsL4" src="gifs/3q/top8.gif">
+					<img id="top10" class="robotgifsL4" src="gifs/3q/top9.gif">
+					<img id="top11" class="robotgifsL4" src="gifs/3q/top10.gif">
+					<img id="top12" class="robotgifsL4" src="gifs/3q/top11.gif">
+					<img id="top13" class="robotgifsL4" src="gifs/3q/top12.gif">
+
+				<img id="toprev" class="robotgifsL4" src="gifs/3q/toprev.gif">
+					<img id="top12rev" class="robotgifsL4" src="gifs/3q/top12rev.gif">
+					<img id="top1rev" class="robotgifsL4" src="gifs/3q/top1rev.gif">
+					<img id="top2rev" class="robotgifsL4" src="gifs/3q/top2rev.gif">
+					<img id="top3rev" class="robotgifsL4" src="gifs/3q/top3rev.gif">
+					<img id="top4rev" class="robotgifsL4" src="gifs/3q/top4rev.gif">
+					<img id="top5rev" class="robotgifsL4" src="gifs/3q/top5rev.gif">
+					<img id="top6rev" class="robotgifsL4" src="gifs/3q/top6rev.gif">
+					<img id="top7rev" class="robotgifsL4" src="gifs/3q/top7rev.gif">
+					<img id="top8rev" class="robotgifsL4" src="gifs/3q/top8rev.gif">
+					<img id="top9rev" class="robotgifsL4" src="gifs/3q/top9rev.gif">
+					<img id="top10rev" class="robotgifsL4" src="gifs/3q/top10rev.gif">
+					<img id="top11rev" class="robotgifsL4" src="gifs/3q/top11rev.gif">
+					<img id="top12rev" class="robotgifsL4" src="gifs/3q/top12rev.gif">
+					<img id="top13rev" class="robotgifsL4" src="gifs/3q/top13rev.gif">
+
+				<img id="atop" class="robotgifsL2" src="gifs/fV/atop.gif">
+					<img id="atop1" class="robotgifsL2" src="gifs/fV/atop13.gif">
+					<img id="atop2" class="robotgifsL2" src="gifs/fV/atop1.gif">
+					<img id="atop3" class="robotgifsL2" src="gifs/fV/atop2.gif">
+					<img id="atop4" class="robotgifsL2" src="gifs/fV/atop3.gif">
+					<img id="atop5" class="robotgifsL2" src="gifs/fV/atop4.gif">
+					<img id="atop6" class="robotgifsL2" src="gifs/fV/atop5.gif">
+					<img id="atop7" class="robotgifsL2" src="gifs/fV/atop6.gif">
+					<img id="atop8" class="robotgifsL2" src="gifs/fV/atop7.gif">
+					<img id="atop9" class="robotgifsL2" src="gifs/fV/atop8.gif">
+					<img id="atop10" class="robotgifsL2" src="gifs/fV/atop9.gif">
+					<img id="atop11" class="robotgifsL2" src="gifs/fV/atop10.gif">
+					<img id="atop12" class="robotgifsL2" src="gifs/fV/atop11.gif">
+					<img id="atop13" class="robotgifsL2" src="gifs/fV/atop12.gif">
+
+				<img id="atoprev" class="robotgifsL2" src="gifs/fV/atoprev.gif">
+					<img id="atop1rev" class="robotgifsL2" src="gifs/fV/atop1rev.gif">
+					<img id="atop2rev" class="robotgifsL2" src="gifs/fV/atop2rev.gif">
+					<img id="atop3rev" class="robotgifsL2" src="gifs/fV/atop3rev.gif">
+					<img id="atop4rev" class="robotgifsL2" src="gifs/fV/atop4rev.gif">
+					<img id="atop5rev" class="robotgifsL2" src="gifs/fV/atop5rev.gif">
+					<img id="atop6rev" class="robotgifsL2" src="gifs/fV/atop6rev.gif">
+					<img id="atop7rev" class="robotgifsL2" src="gifs/fV/atop7rev.gif">
+					<img id="atop8rev" class="robotgifsL2" src="gifs/fV/atop8rev.gif">
+					<img id="atop9rev" class="robotgifsL2" src="gifs/fV/atop9rev.gif">
+					<img id="atop10rev" class="robotgifsL2" src="gifs/fV/atop10rev.gif">
+					<img id="atop11rev" class="robotgifsL2" src="gifs/fV/atop11rev.gif">
+					<img id="atop12rev" class="robotgifsL2" src="gifs/fV/atop12rev.gif">
+					<img id="atop13rev" class="robotgifsL2" src="gifs/fV/atop13rev.gif">	
 
 
+				<img id="aatop" class="robotgifsL3" src="gifs/sideV/aatop.gif">
+					<img id="aatop1" class="robotgifsL3" src="gifs/sideV/aatop13.gif">
+					<img id="aatop2" class="robotgifsL3" src="gifs/sideV/aatop1.gif">
+					<img id="aatop3" class="robotgifsL3" src="gifs/sideV/aatop2.gif">
+					<img id="aatop4" class="robotgifsL3" src="gifs/sideV/aatop3.gif">
+					<img id="aatop5" class="robotgifsL3" src="gifs/sideV/aatop4.gif">
+					<img id="aatop6" class="robotgifsL3" src="gifs/sideV/aatop5.gif">
+					<img id="aatop7" class="robotgifsL3" src="gifs/sideV/aatop6.gif">
+					<img id="aatop8" class="robotgifsL3" src="gifs/sideV/aatop7.gif">
+					<img id="aatop9" class="robotgifsL3" src="gifs/sideV/aatop8.gif">
+					<img id="aatop10" class="robotgifsL3" src="gifs/sideV/aatop9.gif">
+					<img id="aatop11" class="robotgifsL3" src="gifs/sideV/aatop10.gif">
+					<img id="aatop12" class="robotgifsL3" src="gifs/sideV/aatop11.gif">
+					<img id="aatop13" class="robotgifsL3" src="gifs/sideV/aatop12.gif">
 
-			<img id="3quartv" class="robotgifs" src="gifs/fV/fV11.gif">
-			<img class="maedabox" src="maedabox.svg">	
-			
-			<img class="maedabox2" src="maedabox.svg">	
-			
-			<img class="maedabox2" src="maedabox.svg">	
-			
-			<img class="maedabox2" src="maedabox.svg">	
-			
+				<img id="aatoprev" class="robotgifsL3" src="gifs/sideV/aatoprev.gif">
+					<img id="aatop1rev" class="robotgifsL3" src="gifs/sideV/aatop1rev.gif">
+					<img id="aatop2rev" class="robotgifsL3" src="gifs/sideV/aatop2rev.gif">
+					<img id="aatop3rev" class="robotgifsL3" src="gifs/sideV/aatop3rev.gif">
+					<img id="aatop4rev" class="robotgifsL3" src="gifs/sideV/aatop4rev.gif">
+					<img id="aatop5rev" class="robotgifsL3" src="gifs/sideV/aatop5rev.gif">
+					<img id="aatop6rev" class="robotgifsL3" src="gifs/sideV/aatop6rev.gif">
+					<img id="aatop7rev" class="robotgifsL3" src="gifs/sideV/aatop7rev.gif">
+					<img id="aatop8rev" class="robotgifsL3" src="gifs/sideV/aatop8rev.gif">
+					<img id="aatop9rev" class="robotgifsL3" src="gifs/sideV/aatop9rev.gif">
+					<img id="aatop10rev" class="robotgifsL3" src="gifs/sideV/aatop10rev.gif">
+					<img id="aatop11rev" class="robotgifsL3" src="gifs/sideV/aatop11rev.gif">
+					<img id="aatop12rev" class="robotgifsL3" src="gifs/sideV/aatop12rev.gif">
+					<img id="aatop13rev" class="robotgifsL3" src="gifs/sideV/aatop13rev.gif">	
 
+				<img id="aaatop" class="robotgifs" src="gifs/rearV/aaatop.gif">
+					<img id="aaatop1" class="robotgifs" src="gifs/rearV/aaatop13.gif">
+					<img id="aaatop2" class="robotgifs" src="gifs/rearV/aaatop1.gif">
+					<img id="aaatop3" class="robotgifs" src="gifs/rearV/aaatop2.gif">
+					<img id="aaatop4" class="robotgifs" src="gifs/rearV/aaatop3.gif">
+					<img id="aaatop5" class="robotgifs" src="gifs/rearV/aaatop4.gif">
+					<img id="aaatop6" class="robotgifs" src="gifs/rearV/aaatop5.gif">
+					<img id="aaatop7" class="robotgifs" src="gifs/rearV/aaatop6.gif">
+					<img id="aaatop8" class="robotgifs" src="gifs/rearV/aaatop7.gif">
+					<img id="aaatop9" class="robotgifs" src="gifs/rearV/aaatop8.gif">
+					<img id="aaatop10" class="robotgifs" src="gifs/rearV/aaatop9.gif">
+					<img id="aaatop11" class="robotgifs" src="gifs/rearV/aaatop10.gif">
+					<img id="aaatop12" class="robotgifs" src="gifs/rearV/aaatop11.gif">
+					<img id="aaatop13" class="robotgifs" src="gifs/rearV/aaatop12.gif">
+
+				<img id="aaatoprev" class="robotgifs" src="gifs/rearV/aaatoprev.gif">
+					<img id="aaatop1rev" class="robotgifs" src="gifs/rearV/aaatop1rev.gif">
+					<img id="aaatop2rev" class="robotgifs" src="gifs/rearV/aaatop2rev.gif">
+					<img id="aaatop3rev" class="robotgifs" src="gifs/rearV/aaatop3rev.gif">
+					<img id="aaatop4rev" class="robotgifs" src="gifs/rearV/aaatop4rev.gif">
+					<img id="aaatop5rev" class="robotgifs" src="gifs/rearV/aaatop5rev.gif">
+					<img id="aaatop6rev" class="robotgifs" src="gifs/rearV/aaatop6rev.gif">
+					<img id="aaatop7rev" class="robotgifs" src="gifs/rearV/aaatop7rev.gif">
+					<img id="aaatop8rev" class="robotgifs" src="gifs/rearV/aaatop8rev.gif">
+					<img id="aaatop9rev" class="robotgifs" src="gifs/rearV/aaatop9rev.gif">
+					<img id="aaatop10rev" class="robotgifs" src="gifs/rearV/aaatop10rev.gif">
+					<img id="aaatop11rev" class="robotgifs" src="gifs/rearV/aaatop11rev.gif">
+					<img id="aaatop12rev" class="robotgifs" src="gifs/rearV/aaatop12rev.gif">
+					<img id="aaatop13rev" class="robotgifs" src="gifs/rearV/aaatop13rev.gif">	
+			</div>
+<!-- maeda boxes sub cams -->
+			<div class="maedabox" id="mbox1">
+				<div class="inside" id="switchfirst">
+					1
+					
+				</div>				
+				<img id="aaatop1jr" class="robotgifsjr" src="gifs/rearV/aaatop13.gif">
+					<img id="aaatop2jr" class="robotgifsjr" src="gifs/rearV/aaatop1.gif">
+					<img id="aaatop3jr" class="robotgifsjr" src="gifs/rearV/aaatop2.gif">
+					<img id="aaatop4jr" class="robotgifsjr" src="gifs/rearV/aaatop3.gif">
+					<img id="aaatop5jr" class="robotgifsjr" src="gifs/rearV/aaatop4.gif">
+					<img id="aaatop6jr" class="robotgifsjr" src="gifs/rearV/aaatop5.gif">
+					<img id="aaatop7jr" class="robotgifsjr" src="gifs/rearV/aaatop6.gif">
+					<img id="aaatop8jr" class="robotgifsjr" src="gifs/rearV/aaatop7.gif">
+					<img id="aaatop9jr" class="robotgifsjr" src="gifs/rearV/aaatop8.gif">
+					<img id="aaatop10jr" class="robotgifsjr" src="gifs/rearV/aaatop9.gif">
+					<img id="aaatop11jr" class="robotgifsjr" src="gifs/rearV/aaatop10.gif">
+					<img id="aaatop12jr" class="robotgifsjr" src="gifs/rearV/aaatop11.gif">
+					<img id="aaatop13jr" class="robotgifsjr" src="gifs/rearV/aaatop12.gif">
+
+				<img id="aaatop1revjr" class="robotgifsjr" src="gifs/rearV/aaatop1rev.gif">
+					<img id="aaatop2revjr" class="robotgifsjr" src="gifs/rearV/aaatop2rev.gif">
+					<img id="aaatop3revjr" class="robotgifsjr" src="gifs/rearV/aaatop3rev.gif">
+					<img id="aaatop4revjr" class="robotgifsjr" src="gifs/rearV/aaatop4rev.gif">
+					<img id="aaatop5revjr" class="robotgifsjr" src="gifs/rearV/aaatop5rev.gif">
+					<img id="aaatop6revjr" class="robotgifsjr" src="gifs/rearV/aaatop6rev.gif">
+					<img id="aaatop7revjr" class="robotgifsjr" src="gifs/rearV/aaatop7rev.gif">
+					<img id="aaatop8revjr" class="robotgifsjr" src="gifs/rearV/aaatop8rev.gif">
+					<img id="aaatop9revjr" class="robotgifsjr" src="gifs/rearV/aaatop9rev.gif">
+					<img id="aaatop10revjr" class="robotgifsjr" src="gifs/rearV/aaatop10rev.gif">
+					<img id="aaatop11revjr" class="robotgifsjr" src="gifs/rearV/aaatop11rev.gif">
+					<img id="aaatop12revjr" class="robotgifsjr" src="gifs/rearV/aaatop12rev.gif">
+					<img id="aaatop13revjr" class="robotgifsjr" src="gifs/rearV/aaatop13rev.gif">	
+				</div>
+
+
+				<div class="maedabox2" id="mbox2">
+				  <div class="inside" id="switchsecond">
+					2
+				  </div>
+
+					<img id="atop1jr" class="robotgifsL2jr" src="gifs/fV/atop13.gif">
+						<img id="atop2jr" class="robotgifsL2jr" src="gifs/fV/atop1.gif">
+						<img id="atop3jr" class="robotgifsL2jr" src="gifs/fV/atop2.gif">
+						<img id="atop4jr" class="robotgifsL2jr" src="gifs/fV/atop3.gif">
+						<img id="atop5jr" class="robotgifsL2jr" src="gifs/fV/atop4.gif">
+						<img id="atop6jr" class="robotgifsL2jr" src="gifs/fV/atop5.gif">
+						<img id="atop7jr" class="robotgifsL2jr" src="gifs/fV/atop6.gif">
+						<img id="atop8jr" class="robotgifsL2jr" src="gifs/fV/atop7.gif">
+						<img id="atop9jr" class="robotgifsL2jr" src="gifs/fV/atop8.gif">
+						<img id="atop10jr" class="robotgifsL2jr" src="gifs/fV/atop9.gif">
+						<img id="atop11jr" class="robotgifsL2jr" src="gifs/fV/atop10.gif">
+						<img id="atop12jr" class="robotgifsL2jr" src="gifs/fV/atop11.gif">
+						<img id="atop13jr" class="robotgifsL2jr" src="gifs/fV/atop12.gif">
+
+					<img id="atop1revjr" class="robotgifsL2jr" src="gifs/fV/atop1rev.gif">
+						<img id="atop2revjr" class="robotgifsL2jr" src="gifs/fV/atop2rev.gif">
+						<img id="atop3revjr" class="robotgifsL2jr" src="gifs/fV/atop3rev.gif">
+						<img id="atop4revjr" class="robotgifsL2jr" src="gifs/fV/atop4rev.gif">
+						<img id="atop5revjr" class="robotgifsL2jr" src="gifs/fV/atop5rev.gif">
+						<img id="atop6revjr" class="robotgifsL2jr" src="gifs/fV/atop6rev.gif">
+						<img id="atop7revjr" class="robotgifsL2jr" src="gifs/fV/atop7rev.gif">
+						<img id="atop8revjr" class="robotgifsL2jr" src="gifs/fV/atop8rev.gif">
+						<img id="atop9revjr" class="robotgifsL2jr" src="gifs/fV/atop9rev.gif">
+						<img id="atop10revjr" class="robotgifsL2jr" src="gifs/fV/atop10rev.gif">
+						<img id="atop11revjr" class="robotgifsL2jr" src="gifs/fV/atop11rev.gif">
+						<img id="atop12revjr" class="robotgifsL2jr" src="gifs/fV/atop12rev.gif">
+						<img id="atop13revjr" class="robotgifsL2jr" src="gifs/fV/atop13rev.gif">				
+
+				</div>
+
+
+				<div class="maedabox2" id="mbox3">	
+					<div class="inside" id="switchthird">
+						3
+					</div>
+
+
+					<img id="aatop1jr" class="robotgifsL3jr" src="gifs/sideV/aatop13.gif">
+					<img id="aatop2jr" class="robotgifsL3jr" src="gifs/sideV/aatop1.gif">
+					<img id="aatop3jr" class="robotgifsL3jr" src="gifs/sideV/aatop2.gif">
+					<img id="aatop4jr" class="robotgifsL3jr" src="gifs/sideV/aatop3.gif">
+					<img id="aatop5jr" class="robotgifsL3jr" src="gifs/sideV/aatop4.gif">
+					<img id="aatop6jr" class="robotgifsL3jr" src="gifs/sideV/aatop5.gif">
+					<img id="aatop7jr" class="robotgifsL3jr" src="gifs/sideV/aatop6.gif">
+					<img id="aatop8jr" class="robotgifsL3jr" src="gifs/sideV/aatop7.gif">
+					<img id="aatop9jr" class="robotgifsL3jr" src="gifs/sideV/aatop8.gif">
+					<img id="aatop10jr" class="robotgifsL3jr" src="gifs/sideV/aatop9.gif">
+					<img id="aatop11jr" class="robotgifsL3jr" src="gifs/sideV/aatop10.gif">
+					<img id="aatop12jr" class="robotgifsL3jr" src="gifs/sideV/aatop11.gif">
+					<img id="aatop13jr" class="robotgifsL3jr" src="gifs/sideV/aatop12.gif">
+
+					<img id="aatop1revjr" class="robotgifsL3jr" src="gifs/sideV/aatop1rev.gif">
+					<img id="aatop2revjr" class="robotgifsL3jr" src="gifs/sideV/aatop2rev.gif">
+					<img id="aatop3revjr" class="robotgifsL3jr" src="gifs/sideV/aatop3rev.gif">
+					<img id="aatop4revjr" class="robotgifsL3jr" src="gifs/sideV/aatop4rev.gif">
+					<img id="aatop5revjr" class="robotgifsL3jr" src="gifs/sideV/aatop5rev.gif">
+					<img id="aatop6revjr" class="robotgifsL3jr" src="gifs/sideV/aatop6rev.gif">
+					<img id="aatop7revjr" class="robotgifsL3jr" src="gifs/sideV/aatop7rev.gif">
+					<img id="aatop8revjr" class="robotgifsL3jr" src="gifs/sideV/aatop8rev.gif">
+					<img id="aatop9revjr" class="robotgifsL3jr" src="gifs/sideV/aatop9rev.gif">
+					<img id="aatop10revjr" class="robotgifsL3jr" src="gifs/sideV/aatop10rev.gif">
+					<img id="aatop11revjr" class="robotgifsL3jr" src="gifs/sideV/aatop11rev.gif">
+					<img id="aatop12revjr" class="robotgifsL3jr" src="gifs/sideV/aatop12rev.gif">
+					<img id="aatop13revjr" class="robotgifsL3jr" src="gifs/sideV/aatop13rev.gif">	
+
+				</div>
+
+
+				<div class="maedabox2" id="mbox4">	
+					<div class="inside" id="switchfourth">
+						4
+					</div>
+					<img id="top1jr" class="robotgifsjrMaincam" src="gifs/3q/top13.gif">
+						<img id="top2jr" class="robotgifsjrMaincam" src="gifs/3q/top1.gif">
+						<img id="top3jr" class="robotgifsjrMaincam" src="gifs/3q/top2.gif">
+						<img id="top4jr" class="robotgifsjrMaincam" src="gifs/3q/top3.gif">
+						<img id="top5jr" class="robotgifsjrMaincam" src="gifs/3q/top4.gif">
+						<img id="top6jr" class="robotgifsjrMaincam" src="gifs/3q/top5.gif">
+						<img id="top7jr" class="robotgifsjrMaincam" src="gifs/3q/top6.gif">
+						<img id="top8jr" class="robotgifsjrMaincam" src="gifs/3q/top7.gif">
+						<img id="top9jr" class="robotgifsjrMaincam" src="gifs/3q/top8.gif">
+						<img id="top10jr" class="robotgifsjrMaincam" src="gifs/3q/top9.gif">
+						<img id="top11jr" class="robotgifsjrMaincam" src="gifs/3q/top10.gif">
+						<img id="top12jr" class="robotgifsjrMaincam" src="gifs/3q/top11.gif">
+						<img id="top13jr" class="robotgifsjrMaincam" src="gifs/3q/top12.gif">
+
+						<img id="top12revjr" class="robotgifsjrMaincam" src="gifs/3q/top12rev.gif">
+						<img id="top1revjr" class="robotgifsjrMaincam" src="gifs/3q/top1rev.gif">
+						<img id="top2revjr" class="robotgifsjrMaincam" src="gifs/3q/top2rev.gif">
+						<img id="top3revjr" class="robotgifsjrMaincam" src="gifs/3q/top3rev.gif">
+						<img id="top4revjr" class="robotgifsjrMaincam" src="gifs/3q/top4rev.gif">
+						<img id="top5revjr" class="robotgifsjrMaincam" src="gifs/3q/top5rev.gif">
+						<img id="top6revjr" class="robotgifsjrMaincam" src="gifs/3q/top6rev.gif">
+						<img id="top7revjr" class="robotgifsjrMaincam" src="gifs/3q/top7rev.gif">
+						<img id="top8revjr" class="robotgifsjrMaincam" src="gifs/3q/top8rev.gif">
+						<img id="top9revjr" class="robotgifsjrMaincam" src="gifs/3q/top9rev.gif">
+						<img id="top10revjr" class="robotgifsjrMaincam" src="gifs/3q/top10rev.gif">
+						<img id="top11revjr" class="robotgifsjrMaincam" src="gifs/3q/top11rev.gif">
+						<img id="top12revjr" class="robotgifsjrMaincam" src="gifs/3q/top12rev.gif">
+						<img id="top13revjr" class="robotgifsjrMaincam" src="gifs/3q/top13rev.gif">	
+				</div>
+
+<!-- 			<div id="mapcontain">
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button2.svg">
+					<img class="taggerbuttons" src="button2.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button4.svg">
+					<img class="taggerbuttons" src="button4.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button.svg">
+					<img class="taggerbuttons" src="button.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="button3.svg">
+					<img class="taggerbuttons" src="button3.svg">
+				</div>	
+				<div class="mapbutton">
+					<img class="taggerbuttons" src="buttonh.svg">
+					<img class="taggerbuttons" src="buttonb.svg">
+				</div>
+			</div> -->
+			
+<!-- 			<div class="mousediag2">
+				<div id="labelhold">
+					<p class="md2lab" id="diaglabel">
+						MSe*HIST Trckng
+					</p>
+				</div>
+
+				<div class="ydelays2">
+					<p class="md2lab">
+						Ya
+					</p>
+					<img class="ydymarkers" id="ydy1" src="ydymarker.svg">
+				</div>
+				
+				<div class="ydelays2">
+					<p class="md2lab">
+						Yb
+					</p>
+					<img class="ydymarkers" id="ydy2" src="ydymarker.svg">
+				</div>
+				<div class="ydelays2">
+					<p class="md2lab">
+						Yc
+					</p>
+					<img class="ydymarkers" id="ydy3" src="ydymarker.svg">
+				</div>
+				<div class="ydelays2" >
+					<p class="md2lab">
+						Yd
+					</p>
+					<img class="ydymarkers" id="ydy4" src="ydymarker.svg">
+				</div>
+				<div class="ydelays2">
+					<p class="md2lab">
+						Ye
+					</p>
+					<img class="ydymarkers" id="ydy5" src="ydymarker.svg">
+				</div>
+
+				<div class="ydelays2">
+					<p class="md2lab">
+						Xa
+					</p>
+					<img class="ydymarkers" id="ydy6" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays2">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy7" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays2">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy8" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays2">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy9" src="xdymarker.svg">
+				</div>
+
+				<div class="ydelays2">
+					<p class="md2lab">
+						Xb
+					</p>
+					<img class="ydymarkers" id="ydy10" src="xdymarker.svg">
+				</div>
+				
+				
+				<div class="mouseloghold">
+					<p id="mselogger">
+							<span>000.00/</span><br><span>000.00</span><br>
+					</p>
+				</div>	
+			</div> -->
 
 			<div class="headmarker">
 				<div class="textcontain">
@@ -545,142 +931,43 @@
 						1 hd.bse.pnl.6\par<br>
 					</p>
 				</div>	
-			</div>		
-		</div>
-		<div id="infocontainer">
-			<div id="infotag">
+			</div>	
+
+			<div id="cambutthold">				
+				<div class="cambutts" id="cam4">
+					4
+				</div>			
+
+				<div class="cambutts" id="cam3">
+					3
+				</div>
+
+				<div class="cambutts" id="cam2">
+					2
+				</div>
+
+				<div class="cambutts" id="cam1">
+					1
+				</div>
+
+				<p id="cam">
+					CAM// MS - 1231 
+				</p>
+
+			</div>
 			
-				<p id="title">
-					CAM// NH - 0626<br>
-					PROJ// A-R7<br>
-					SESSION// 626-1006y08<br>
-				</p>		
-				<p id="date">
-				</p>
-			</div>
-			<div id="mousediag">
-				<p id="yaxtext">
-					y * READ >> 0
-				</p>
-				<p id="xaxtext">
-					x * READ >> 0
-				</p>
-				<div id="xax">
-					<img id="msetrack" src="msetrack.svg">
-				</div>
-			</div>
-			<div class="mousediag2a">
-				<div id="labelhold">
-					<p class="md2lab" id="diaglabel">
-						MSe*HIST Trckng
-					</p>
-				</div>
-
-				<div class="ydelays">
-					<p class="md2lab">
-						Ya
-					</p>
-					<img class="ydymarkers" id="ydy1" src="ydymarker.svg">
-				</div>
-				
-				<div class="ydelays">
-					<p class="md2lab">
-						Yb
-					</p>
-					<img class="ydymarkers" id="ydy2" src="ydymarker.svg">
-				</div>
-				<div class="ydelays">
-					<p class="md2lab">
-						Yc
-					</p>
-					<img class="ydymarkers" id="ydy3" src="ydymarker.svg">
-				</div>
-				<div class="ydelays" >
-					<p class="md2lab">
-						Yd
-					</p>
-					<img class="ydymarkers" id="ydy4" src="ydymarker.svg">
-				</div>
-				<div class="ydelays">
-					<p class="md2lab">
-						Ye
-					</p>
-					<img class="ydymarkers" id="ydy5" src="ydymarker.svg">
-				</div>
-
-				<div class="ydelays">
-					<p class="md2lab">
-						Xa
-					</p>
-					<img class="ydymarkers" id="ydy6" src="xdymarker.svg">
-				</div>
-
-				<div class="ydelays">
-					<p class="md2lab">
-						Xb
-					</p>
-					<img class="ydymarkers" id="ydy7" src="xdymarker.svg">
-				</div>
-
-				<div class="ydelays">
-					<p class="md2lab">
-						Xb
-					</p>
-					<img class="ydymarkers" id="ydy8" src="xdymarker.svg">
-				</div>
-
-				<div class="ydelays">
-					<p class="md2lab">
-						Xb
-					</p>
-					<img class="ydymarkers" id="ydy9" src="xdymarker.svg">
-				</div>
-
-				<div class="ydelays">
-					<p class="md2lab">
-						Xb
-					</p>
-					<img class="ydymarkers" id="ydy10" src="xdymarker.svg">
-				</div>
-				
-				<div id="msd2switch">
-					<img src="sliderbutt.svg">
-				</div>
-				
-				<div class="mouseloghold2">
-					<p id="mselogger">
-							<span>000.00/</span><br><span>000.00</span><br>
-					</p>
-				</div>	
-				
-			</div>
-
-
-
-			<div id="mapcontain">
-				<div class="mapbutton">
-					<img class="taggerbuttons" src="button2.svg">
-					<img class="taggerbuttons" src="button2.svg">
-				</div>	
-				<div class="mapbutton">
-					<img class="taggerbuttons" src="button4.svg">
-					<img class="taggerbuttons" src="button4.svg">
-				</div>	
-				<div class="mapbutton">
-					<img class="taggerbuttons" src="button.svg">
-					<img class="taggerbuttons" src="button.svg">
-				</div>	
-				<div class="mapbutton">
-					<img class="taggerbuttons" src="button3.svg">
-					<img class="taggerbuttons" src="button3.svg">
-				</div>	
-				<div class="mapbutton">
-					<img class="taggerbuttons" src="buttonh.svg">
-					<img class="taggerbuttons" src="buttonb.svg">
-				</div>
+			<div id="butthold">
+				  <div id="subbutthold">
+				      <div class="slider0" id="movebar">
+					  </div>
+					  <div class="turnbutt" id="top1">
+					  </div>
+					  <div class="turnbuttr" id="top1">
+					  </div>
+				  </div>					
 			</div>
 		</div>
-
+	</body>
 
 
 
