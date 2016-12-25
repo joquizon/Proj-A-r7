@@ -724,7 +724,24 @@ $(".maedaboxA").attr("class","maedabox2");
 });
 
 
+		$("#full").click(function()
+		{
+			$("#mainrobotcontainer").css("width","86%");
+			$("#botcontainer").attr("id","botcontainer2")
+			$(".maedabox,.maedabox2,.maedaboxA,.maedabox2A").hide();
+			$("#butthold").attr("id","buttholdA");
+			$("#cambutthold").attr("id","cambuttholdA");
+		});
 
+
+		$("#cam").click(function()
+		{
+			$("#mainrobotcontainer").css("width","75%");
+			$("#botcontainer2").attr("id","botcontainer")
+			$(".maedabox,.maedabox2,.maedaboxA,.maedabox2A").show();
+			$("#buttholdA").attr("id","butthold");
+			$("#cambuttholdA").attr("id","cambutthold");
+		});
 
 
 
