@@ -1,0 +1,85 @@
+/*contains
+    gif advancer
+    slider bar*/
+
+#butthold{
+    width:100%; 
+    height:30px;
+    z-index: 70;}
+
+    #buttholdA{
+   width:100%; 
+    height:20px;}
+
+    #movebar{
+    float:left;
+    height: 100%;
+    background-color:#ff7300;
+    -webkit-transition: width 500ms,  background-color 500ms linear;
+    transition: width 500ms, background-color 500ms linear ;}
+    
+    .slider0{width:0%;}
+        .slider{width:16%;}
+        .slidetop1{width:91%;}
+        .slidetop2{width:7%;}
+        .slidetop3{width:14%;}
+        .slidetop4{width:21%;}
+        .slidetop5{width:28%;}
+        .slidetop6{width:35%;}
+        .slidetop7{width:42%;}
+        .slidetop8{width:49%;}
+        .slidetop9{width:56%;}
+        .slidetop10{width:63%;}
+        .slidetop11{width:70%;}
+        .slidetop12{width:77%;}
+        .slidetop13{width:84%;}
+
+
+        .slidetop1rev{width:0%;}
+        .slidetop2rev{width:7%;}
+        .slidetop3rev{width:14%;}
+        .slidetop4rev{width:21%;}
+        .slidetop5rev{width:28%;}
+        .slidetop6rev{width:35%;}
+        .slidetop7rev{width:42%;}
+        .slidetop8rev{width:49%;}
+        .slidetop9rev{width:56%;}
+        .slidetop10rev{width:63%;}
+        .slidetop11rev{width:70%;}
+        .slidetop12rev{width:77%;}
+        .slidetop13rev{width:84%;}
+
+    #subbutthold{
+    background-color: #959494;
+    width: 75%;
+    height: 100%;
+    float: left;}
+
+
+
+    .turnbutt{
+            background-color: rgb(96, 95, 95);
+        background-image:url(forw.svg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    display:inline-block;
+    float:right;
+    height:100%;
+    margin-left: .5%;
+    width:4%;
+    cursor:pointer}
+
+    .turnbuttr{background-image:url(back.svg);
+                    background-color: rgb(96, 95, 95);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    display:inline-block;
+    float:right;
+    height:100%;
+    width:4%;
+    top:70px;
+    margin-left: .5%;
+    cursor:pointer;}
+
+
+    .cambox{position:absolute;}

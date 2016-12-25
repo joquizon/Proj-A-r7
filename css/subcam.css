@@ -1,0 +1,161 @@
+/*contains
+    subcamera buttons
+    sub cam boxes
+    switches
+    infocontainer*/
+
+
+
+.inside{    /* left: 65px; */
+    float: left;
+    /* z-index: 50; */
+    cursor: pointer;
+    width: 100%;
+    color: #333333;
+    font-size: 1.25vw;
+    font-family: nin;
+    text-align: center;}
+
+        .insideA{    /* left: 65px; */
+    float: left;
+    /* z-index: 50; */
+    cursor: pointer;
+    width: 100%;
+    color: #333333;
+    font-size: 1.25vw;
+    font-family: nin;
+    text-align: center;}
+
+
+    .maedabox{
+        right: 0;
+    width: 25%;
+    float: left;
+    position: absolute;
+    margin-top: 6%;}
+
+    .maedaboxA{
+    right: 0;
+    width: 50%;
+    float: left;}   
+
+    .placer{width:100%;}
+
+    .maedabox2{
+    width: 8.3%;
+    float: left;}
+
+    .maedabox2A{
+    width:34%;
+    float: left;}
+
+#switchfirst{background-color:#ff7300;}
+#switchsecond{background-color: #3592b4;}
+#switchthird{background-color:#387991;}
+#switchfourth{background-color:#395b68;}
+
+
+#cambutthold{    
+    bottom: 4%;
+    width: 42%;
+    /* height: 32px; */
+    margin-left: 33%;
+    /* position: absolute; */
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.5vw;
+    font-family: nin;
+    text-align: center;}
+
+    #cambuttholdA {
+    bottom: 4%;
+    width: 74%;
+    /* height: 32px; */
+    /* margin-left: 33%; */
+    /* position: absolute; */
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.5vw;
+    font-family: nin;
+    text-align: center;
+}
+
+.cambutts{    
+    float: right;
+    height: 100%;
+    width: 6%;
+    display: inline-block;}
+
+#cam{margin-right: 1%;
+    float: right;
+    font-size: 23px;
+    color: white;
+    font-family: kar;
+    font-size: 1.85vw;}
+
+    #cam1{background-color:#ff7300;}
+    #cam2{background-color: #3592b4;}
+    #cam3{background-color:#387991;}
+    #cam4{background-color:#395b68;}
+
+
+/*    #revertbutt{display:none;}
+    #revertbutt2{display:none;}*/
+
+
+
+#infocontainer{
+    width: 100%;}
+   
+    #logo {float: left;
+    /* position: fixed; */
+    top: 0%;
+    margin-left: 1%;
+    z-index: 20;
+    width: 3%;}
+
+
+    #infotag {    
+    float: left;
+    text-align: left;
+    margin-top: 1%;
+    /* position: fixed; */
+    /* top: 0px; */
+    margin-left: 1%;}
+    
+    #title{margin-left:5px;
+    font-size: 23px;
+    color:black;
+    font-family:kar;
+    font-size: 1.25vw;
+    display: inline-block;}
+
+
+
+    #date {margin-left:5px;
+    color:  #7a7a7a;;
+    font-size: 18px;
+    font-family: kar;
+    letter-spacing: 1px;
+    font-size: .71vw;
+    float: right;}
+    
+    #clock1{
+        float:left;
+        background-color: rgba(76, 182, 192, 0.12);
+        margin-left: 1%;min-width: 142px;
+        height: 141px;
+        width: 9%;}
+
+        #info {margin-top: 10%;
+        width: 10%;
+        margin-left:5px;
+        color:#3fdd00;
+        font-size: 16px;
+        font-family: kar;
+        letter-spacing: 1px;}
+            
+        #agtno{font-size: 25px;
+        color: white;
+        font-family: nin;}
+        #browser{color:#3fdd00;}

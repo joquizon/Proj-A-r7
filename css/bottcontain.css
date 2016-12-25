@@ -1,0 +1,229 @@
+/*contains 
+    main bottcontainer div 
+    cross hairs
+    robotgifs large and small
+    Active and activation sign
+    boxer
+    Landing page
+*/
+
+
+#botcontainer {
+    background-color: rgb(16,16,16);
+    width: 100%;
+     position: fixed; 
+    bottom:5%;}
+
+    #botcontainer2 {
+    background-color: rgb(16,16,16);
+    width: 100%;
+     position: fixed;}
+    
+    #lander    {width: 100%;
+    height: 1000px;
+    position: absolute;
+    z-index: 5000;
+    background-color: #b6b6b6;}
+
+
+    #boxer{    
+    display: none;    
+    position: absolute;
+    width: 75%;
+    pointer-events: none;}
+
+
+
+    .notifpos2{
+    pointer-events: none;
+    display: none;   
+    font-size: 36px;
+    color: #3fdd00;
+    font-family: kar;
+    z-index: 20;
+    position: absolute;
+    padding: 0%;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: 66.25%;
+    margin-top: .25%;
+    -webkit-transition: margin-top .5s, margin-left .5s, background-color 1s linear;
+    transition: margin-top .5s, margin-left .5s, background-color 1s linear;
+    font-size: 2.4vw;}
+
+    .notifpos{
+    pointer-events: none;
+    display: none;  
+    z-index: 20;
+    position: absolute;
+    padding: 2%;
+    background-color: rgba(0,161,110,0.85);
+    margin-left: 22%;
+    margin-top: 17%;
+    font-size: 89px;
+    color: #3fdd00;
+    font-family: kar;
+    font-size: 4.65vw;}
+
+
+#crosscontain{
+        display: none;
+        position: absolute;
+        margin-top: 8%;
+        width: 75%;
+        -webkit-transition: margin-top .5s, margin-left .5s, background-color 1s linear, opacity .5s;
+        transition: margin-top .5s, margin-left .5s, background-color 1s linear, opacity .5s;}
+
+        .crosslabs{pointer-events: none;
+        letter-spacing: 1px;
+        color: white;
+        position: absolute;
+        font-size: 16px;
+        font-size: 1.25vw;
+        font-family: nin;}
+
+        .crosslabsM{pointer-events: none;
+        letter-spacing: 1px;
+        color: white;
+        position: absolute;
+        font-size: 16px;
+        font-size: 1.25vw;
+        font-family: nin;
+            margin-top: 16%;}
+
+
+        .crosslabsB{pointer-events: none;
+        letter-spacing: 1px;
+        color: white;
+        position: absolute;
+        font-size: 16px;
+        font-size: 1.25vw;
+        font-family: nin;
+            margin-top: 32%;}
+        
+        .crossesTop {pointer-events: none;
+        position: absolute;
+        width: 3%;}
+
+        .crossesMid {pointer-events: none;
+        position: absolute;
+        width: 3%;
+        margin-top: 16%;}
+
+        .crossesBott {pointer-events: none;
+        position: absolute;
+        width: 3%;
+        margin-top: 32%;}
+
+        #crossA{margin-left: 12%;}
+        #cAl{margin-left: 14%;}
+        
+        #crossB{margin-left: 48.5%;}
+        #cBl{margin-left: 50.5%;}
+
+        #crossC{margin-left: 85%;}
+        #cCl{margin-left: 87%;}
+
+        #crossAM{margin-left: 12%;}
+        #cAMl{margin-left: 14%;}
+
+        #crossBM{margin-left: 48.5%;}
+        #cBMl{margin-left: 50.5%;}
+
+        #crossCM{margin-left: 85%;}
+        #cCMl{margin-left: 87%;}
+
+        #crossAB{margin-left: 12%;}
+        #cABl{margin-left: 14%;}
+
+        #crossBB{margin-left: 48.5%;}
+        #cBBl{margin-left: 50.5%;}
+
+        #crossCB{margin-left: 85%;}
+        #cCBl{margin-left: 87%;}
+
+
+        #aaatop{display:inline-block;}
+        #aaatop{display:inline-block;}
+
+#mainrobotcontainer{width:75%;
+        float: left;}
+
+
+.robotgifs{
+       display:none;
+       float:left;
+       width:100%;
+        opacity:0;
+                -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;}
+
+        .robotgifsL2{
+        display:none;
+        width:100%;
+        float:left;
+        margin-left: -200%;
+        opacity:0;
+                -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;}
+
+        .robotgifsL3{
+        display:none;
+        width:100%;
+        float:left;
+        margin-left: -200%;
+        opacity:0;
+                -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;}
+
+        .robotgifsL4{
+        display:none;
+        width:100%;
+        float:left;
+        margin-left: -200%;
+        opacity:0;
+                -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;}
+        
+       
+
+        .robotgifsjr{
+        display:none;
+        width:100%;
+        float:left;
+        opacity:0;
+        -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;
+        -webkit-filter: brightness(88%); /* Chrome, Safari, Opera */
+        filter: brightness(88%);}
+
+        .robotgifsL2jr{
+        display:none;
+        width:100%;
+        float:left;
+        opacity:0;
+        -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;
+        -webkit-filter: brightness(84%); /* Chrome, Safari, Opera */
+        filter: brightness(84%);}
+
+        .robotgifsL3jr{
+        display:none;
+        width:100%;
+        float:left;
+        opacity:0;
+        -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;
+        -webkit-filter: brightness(80%); /* Chrome, Safari, Opera */
+        filter: brightness(80%);}
+
+        .robotgifsjrMaincam{
+        display:none;
+        width:100%;
+        float:left;
+        opacity:0;
+        -webkit-transition:opacity .25s; /* Safari */
+        transition:opacity .25s;
+        -webkit-filter: brightness(76%); /* Chrome, Safari, Opera */
+        filter: brightness(76%);}
+
+    

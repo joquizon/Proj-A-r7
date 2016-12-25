@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+@font-face {font-family: nin;
+			src:url(nintendo.ttf) ; }	
+
+@font-face {font-family: kar;
+            src:url(ander.ttf) ; }         
+@font-face {font-family: helvb;
+            src:url(helvb2.otf) ; }      
+
+body{background-color:rgb(182, 182, 182);}
+
+.close{height:15%;
+	width:15%;}
+.bottext{display: none;
+    	font-family: nin;
+    font-size: 16px;
+    margin-left: 2%;
+    color: green;
+    }
+
+.headmarker {
+        width: 4%;
+        height: 6%;
+        position: absolute;
+        background-color: rgba(255,255,255,.5);
+        margin-top: -32%;
+        margin-left: 37%;
+        cursor: pointer;}
+
+        .bottext{display: none;
+        	font-family: nin;
+        font-size: 16px;
+        margin-left: 2%;
+        color: black;
+        padding-left: 7px;
+        overflow-x:hidden; 
+        -webkit-transition:  width 1s; /* Safari */
+        transition: width 1s;}
+
+        .headmarker2 {
+        position: absolute;
+        background-color: rgba(255, 255, 255,0);
+        margin-top: -35%;
+        margin-left: 20%;
+        -webkit-transition: width 1s;
+        transition: width 1s;
+        height: 25%;
+        width: 9%;
+        overflow: hidden;
+        padding-right: 5px;
+    	}
+        .textcontain{
+        display: none;
+            width: 105%;
+        height: 100%;
+            background-color: rgb(255, 153, 0);
+        overflow: auto;
+        padding-right: 15px;}
+        #inst{
+        font-size: 16px;
+        color: orange;
+        position: fixed;
+        top: 6.5%;
+        left: .5%;
+        }
+        #closer {
+    	display: none;
+        float: right;
+        margin-left:10%;
+        position: fixed;
+        font-size: 37px;
+        color: white;
+        font-family: nin;
+    	    margin-top: -0.8%;
+    	}
+      
+#mapcontain{    
+    width: 17%;
+    float: left;
+    margin-left: 0%;
+     margin-top: 0%; }
+    .mapbutton{    float: left;
+    width: 16%;
+    /* margin-left: 3%; */
+    margin-left: 4%;
+    margin-top: 0%;}
+    .taggerbuttons{width:100%;
+        float: left;
+        margin-top:25%;}
+
+#test1{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 18%;
+    width: 1%;
+    -webkit-transition: width 1s;
+    transition: width 1s;}
+
+#markermock{
+    display:none;
+    position: absolute;
+    float: left;
+    pointer-events:none;
+}
+
+.mockrect{pointer-events: fill;}
+
+.armgcircs{
+    position: absolute;
+    width: 1%;}
+
+#gcirc1{    margin-left: -21%;
+    margin-top: 10%;}
+
+#holder{float:left;}
