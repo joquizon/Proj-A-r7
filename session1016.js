@@ -55,7 +55,7 @@ $(document).ready(function()
 		});
 
 	// activating section
-	$(".robotgifs,.robotgifsL2,.robotgifsL3,.robotgifsL4,.headmarker,#crosscontain,#boxer,#markermock").mouseover(function()
+	$(".robotgifs,.robotgifsL2,.robotgifsL3,.robotgifsL4,.headmarker,#crosscontain,#crosscontain1,#crosscontainA,#boxer,#boxer1,#boxerA,#markermock").mouseover(function()
 		{
 			// $(".notifpos").fadeIn(500).delay(3000)
 		 //    .queue(function(next) 
@@ -164,7 +164,7 @@ $(document).ready(function()
 			var xaxH = (event.pageX).toFixed(2)
 
 			$("#boxer").show();
-			$("#boxer").css("opacity","1");
+			$("#boxer,#crosscontain,#crosscontain1,#crosscontainA,#boxer,#boxer1,#boxerA").css("opacity","1");
 
 			$("#mselogger").html("<span>"+ yaxH +"/"+"</span><br>"+xaxH+"</span><br>");
 
@@ -292,8 +292,8 @@ $(document).ready(function()
 					$(".crosslabsM").text("0 / 0");
 					$(".crosslabsB").text("0 / 0");
 					$(".notifpos2").fadeOut(200);
-					$("#crosscontain").css("opacity",".5");
-					$("#boxer").css("opacity",".25");
+					$("#crosscontain,#crosscontain1,#crosscontainA").css("opacity",".5");
+					$("#boxer,#boxer1,#boxerA").css("opacity",".25");
 					$("#cam").css("color","white");
 				});
 
@@ -321,11 +321,14 @@ $(document).ready(function()
 	$(".turnbutt").click(function(event)
 	  {
 		var layertop = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13"]
+		var layertopA = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13","top14"]
 		var layertopslide = ["slidetop1","slidetop2","slidetop3","slidetop4","slidetop5","slidetop6","slidetop7","slidetop8","slidetop9","slidetop10","slidetop11","slidetop12","slidetop13","slidetop1"]
 		var layerbottom = ["atop1","atop2","atop3","atop4","atop5","atop6","atop7","atop8","atop9","atop10","atop11","atop12","atop13","atop1",]
 
+
 	    var t = event.target.id
 	    var next= layertop[($.inArray(t,layertop)+1+layertop.length) % layertop.length]
+	   	var nextA= layertopA[($.inArray(t,layertopA)+1+layertopA.length) % layertopA.length]
 	    var mbslide= layertopslide[($.inArray(t,layertopslide)+1+layertopslide.length) % layertopslide.length]
 	    
 	    var mb = $("#movebar").width();
@@ -333,6 +336,7 @@ $(document).ready(function()
 	    var parper = mb/parent*100
 
 
+	    $("#head"+t).attr("id","head"+nextA);
 
 	    // var mbcontain = $("#subbutthold").width()/13;
 	    
@@ -340,7 +344,7 @@ $(document).ready(function()
 	    // var mbslide = mb + mbcontain;
 
 		// $("#movebar").css("width",parper+7+"%");
-				$("#movebar").attr("class","slide"+next);
+		$("#movebar").attr("class","slide"+next);
 	    $("#"+t).hide();
 	    $("#"+t+"rev").hide();
 	    $("#"+next).show().each(function()
@@ -428,10 +432,12 @@ $(document).ready(function()
 	$(".turnbuttr").click(function(event)
 	  {
 		var layertop = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13"]
-
+		var layertopA = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13","top14"]
+		
 	    var t = event.target.id
 	    var next= layertop[($.inArray(t,layertop)-1+layertop.length) % layertop.length]
-
+	    var nextA= layertopA[($.inArray(t,layertopA)-1+layertopA.length) % layertopA.length]
+	    
 	    console.log(next);
 
 
@@ -440,7 +446,10 @@ $(document).ready(function()
 	    var parper = mb/parent*100
 
 		// $("#movebar").css("width",parper-7+"%");
-				$("#movebar").attr("class","slide"+next+"rev");
+		$("#head"+t).attr("id","head"+nextA);
+		$("#headtop14").attr("id","headtop13");
+
+		$("#movebar").attr("class","slide"+next+"rev");
 	    $(".turnbuttr").attr("id",next);
 	    $(".turnbutt").attr("id",next);
 
@@ -650,100 +659,149 @@ $(".maedaboxA").attr("class","maedabox2");
 
 	//maedabox
 
-	$("#draggbutt").click(function()
+	$("#quad").click(function()
 		{
-		$("#revertbutt2").hide();
-		$("#revertbutt").show();
+			$(".maedabox2").attr("class","maedabox2A");
+			$(".maedabox").attr("class","maedabox2A");
+			$("#mainrobotcontainer").hide();
+			$("#botcontainer").attr("id","botcontainer4");
+			$("#butthold").attr("id","buttholdA");
+			$(this).hide();
+			$("#dub,#full,#cam,.cambutts,#boxer,#crosscontain").hide();
+			$("#grid2").show();
+			$("#mbox1,#mbox3").css("margin-left","9%");
+			$("#cambutthold").attr("id","cambuttholdC");
+					$("#subbutthold").css("width","82%");
+			$("#subbutthold").attr("id","subbuttholdA");
+			$("#infocontainer").css("margin-top","0%");
+		});
+	$("#grid2").click(function()
+	{
 		$(".maedabox2").show();
 		$(".maedaboxA").attr("class","maedabox");
 		$(".maedabox2A").attr("class","maedabox2");
 		$("#mbox1").attr("class","maedabox");
-		$("#mainrobotcontainer").css("width","75%");
+		$("#botcontainer4").attr("id","botcontainer");
+		$("#mainrobotcontainer").show();
+		$("#buttholdA").attr("id","butthold");
+		$(this).hide();
+		$("#quad,#full,#dub,#cam,.cambutts,#boxer,#crosscontain").show();	
+		$("#mbox1,#mbox3").css("margin-left","0%");
+		$("#cambuttholdC").attr("id","cambutthold");
+		$("#subbuttholdA").attr("id","subbutthold");	
+				$("#subbutthold").css("width","75%");
+		$("#infocontainer").css("margin-top","-3%");				
+	});
 
 
-		$(".maedabox2").show();
-		$(".maedaboxA").attr("class","maedabox");
-		$("#mainrobotcontainer").css("width","75%");
-		$(".inside").show();
-
-
-			$(".maedabox2").attr("class","maedabox2A");
-			$(".maedabox").attr("class","maedabox2A");
-			$("#mainrobotcontainer").css("width","0%");
-
-		});
-
-	$("#resizebutt").click(function()
-	{
-		$("#revertbutt").hide();
-		$("#revertbutt2").show();
-		$(".maedabox2").show();
-		$(".maedaboxA").attr("class","maedabox");
-		$(".maedabox2A").attr("class","maedabox2");
-		$("#mainrobotcontainer").css("width","75%");
-
-
-
-		$(".maedaboxA").attr("class","maedabox2");
-				$(".maedabox2").show();
-		$("#mainrobotcontainer").css("width","75%");
-		$(".inside").show();
-
-
-
-
-
+	$("#dub").click(function()
+	{			
 
 		$(".maedabox2").hide();
 		$(".maedabox").attr("class","maedaboxA");
-		$("#mainrobotcontainer").css("width","50%");
+		$("#mainrobotcontainer").attr("id","mainrobotcontainerA");
+		$("#crosscontain").attr("id","crosscontainA");
+		$("#boxer").attr("id","boxerA");
 		$(".inside").hide();
-
+		$(this).hide();
+		$("#quad,#full").hide();
+		$("#grid3").show();
+		$("#subbutthold").css("width","100%");
+		$(".notifpos2").css("margin-left","41.5%");		
+		$("#cambutthold").attr("id","cambuttholdB");
+		$("#botcontainer").attr("id","botcontainer3");		
+		$(".cambutts").css("width","3%");
+		$(".subID").attr("class","subID1");
+		$("#robotcontrol").attr("id","robotcontrolB");
+		$("#robotcontrolC").css("display","inline-block");
 	});
 
-	$("#revertbutt").click(function()
+
+
+		$("#grid3").click(function()
 	{
 		$(".maedabox2").show();
 		$(".maedaboxA").attr("class","maedabox");
-		$(".maedabox2A").attr("class","maedabox2");
-		$("#mbox1").attr("class","maedabox");
-		$("#mainrobotcontainer").css("width","75%");
-
-	});
-
-		$("#revertbutt2").click(function()
-	{
-
-
-
-		$(".maedabox2").show();
-		$(".maedaboxA").attr("class","maedabox");
-		$("#mainrobotcontainer").css("width","75%");
+				$("#mainrobotcontainerA").attr("id","mainrobotcontainer");
+		$("#crosscontainA").attr("id","crosscontain");
+		$("#boxerA").attr("id","boxer");
 		$(".inside").show();
+		$("#quad,#full,#dub").show();
+		$(this).hide();
+		$("#subbutthold").css("width","75%");
+		$("#cambuttholdB").attr("id","cambutthold");
+		$("#botcontainer3").attr("id","botcontainer");	
+		$(".cambutts").css("width","6%");
+		$(".resets").css("width","2%");
+		$(".subID1").attr("class","subID");
+			$(".notifpos2").css("margin-left","66.25%");	
+		$("#robotcontrolB").attr("id","robotcontrol");
+		$("#robotcontrolC").hide();
+	});
 
-});
-
-
+// full screen
 		$("#full").click(function()
 		{
-			$("#mainrobotcontainer").css("width","86%");
-			$("#botcontainer").attr("id","botcontainer2")
+			$("#mainrobotcontainer").attr("id","mainrobotcontainer1");
+			$("#botcontainer").attr("id","botcontainer2");
+					$("#crosscontain").attr("id","crosscontain1");
+					$("#boxer").attr("id","boxer1");
 			$(".maedabox,.maedabox2,.maedaboxA,.maedabox2A").hide();
 			$("#butthold").attr("id","buttholdA");
 			$("#cambutthold").attr("id","cambuttholdA");
+			$(this).hide();
+			$("#quad,#dub").hide();
+			$("#grid").show();
+			$(".notifpos2").css("margin-left","77.25%");
+			$("#subbutthold").css("width","86%");	
+			$("#infocontainer").css("margin-top","0%");
+			$("#robotcontrol").attr("id","robotcontrolA");
 		});
 
 
-		$("#cam").click(function()
+		$("#grid").click(function()
 		{
-			$("#mainrobotcontainer").css("width","75%");
-			$("#botcontainer2").attr("id","botcontainer")
+			$("#mainrobotcontainer1").attr("id","mainrobotcontainer");
+			$("#crosscontain1").attr("id","crosscontain");
+			$("#boxer1").attr("id","boxer");
+			$("#botcontainer2").attr("id","botcontainer");
 			$(".maedabox,.maedabox2,.maedaboxA,.maedabox2A").show();
 			$("#buttholdA").attr("id","butthold");
 			$("#cambuttholdA").attr("id","cambutthold");
+			$(this).hide();
+			$("#quad,#dub").show();
+			$("#full").show();
+			$(".notifpos2").css("margin-left","66.25%");			
+			$("#subbutthold").css("width","75%");
+			$("#infocontainer").css("margin-top","-3%");
+			$("#robotcontrolA").attr("id","robotcontrol");
+		});
+
+$("#thighRT").click(function()
+	{
+		$("#rearSeq2boxes").show();
+	});
+				$("#headtop1").click(function(event)
+		{ var z =event.target.id
+			console.log(z);
+		});
+		$(".head").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"Arm").css("opacity","1");
+		});
+
+		$("#maedatag").click(function(event)
+		{ var z =event.target.id
+			console.log(z)
+		});
+
+		$("#headtop3").click(function(event)
+		{ var z =event.target.id
+			console.log(z)
 		});
 
 
-
+// MOVE ID'S OF ROBOT CONTROL TO ACTUAL PATHS!!! OTHERWISE EVENT.TARGET.ID MALFUNCTION!!!!
 
 });
