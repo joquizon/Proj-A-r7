@@ -57,7 +57,7 @@
 @font-face {font-family: helvb;
             src:url(helvb2.otf) ; }      
 
-body{background-color:rgb(182, 182, 182);}
+body{background-color:rgb(16, 16, 16);}
 
 .close{height:15%;
 	width:15%;}
@@ -163,3 +163,9 @@ body{background-color:rgb(182, 182, 182);}
     margin-top: 10%;}
 
 #holder{float:left;}
+
+
+#maedatag{
+    opacity: 1;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;}
