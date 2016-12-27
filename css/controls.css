@@ -55,6 +55,15 @@
     height: 100%;
     float: left;}
 
+    
+    #subbuttholdA {
+    width: 82%;
+    background-color: #959494;
+    height: 100%;
+    float: left;
+    margin-left: 9%;}
+
+
 
 
     .turnbutt{
@@ -83,3 +92,45 @@
 
 
     .cambox{position:absolute;}
+
+
+    #robotcontrol{    position: absolute;
+    background-color: rgb(14,14,14);
+    margin-top: 22.25%;
+    width: 19%;
+    z-index: -500;
+    margin-left: -21%;
+    -webkit-transition: width .15s, margin-left .15s, margin-top .15s;
+    transition: width .15s, margin-left .15s, margin-top .15s;}
+
+        #robotcontrolA {
+    position: absolute;
+    background-color: rgb(14,14,14);
+    margin-top: 16.85%;
+    width: 20%;
+    z-index: -500;
+    margin-left: -2.5%;
+        -webkit-transition: width .5s, margin-left .5s, margin-top .5s;
+    transition: width .5s, margin-left .5s, margin-top .5s;}
+
+
+    #robotcontrolB {
+    position: absolute;
+    background-color: rgb(14,14,14);
+    margin-top: 30.25%;
+    width: 12%;
+    z-index: -500;
+    margin-left: -81%;
+    -webkit-transition: width .5s, margin-left .5s, margin-top .5s;
+    transition: width .5s, margin-left .5s, margin-top .5s;}
+
+    #robotcontrolC {
+    display:none;
+    position: absolute;
+    background-color: rgb(14,14,14);
+    margin-top: 30.25%;
+    width: 12%;
+    z-index: -500;
+    margin-left: -31%;
+    -webkit-transition: width .5s, margin-left .5s, margin-top .5s;
+    transition: width .5s, margin-left .5s, margin-top .5s;}
