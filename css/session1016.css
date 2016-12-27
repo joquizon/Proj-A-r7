@@ -57,7 +57,15 @@
 @font-face {font-family: helvb;
             src:url(helvb2.otf) ; }      
 
-body{background-color:rgb(182, 182, 182);}
+body{background-color:rgb(14, 14, 14);}
+
+#wrdmrk {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    width: 3%;
+    z-index: 1;
+}
 
 .close{height:15%;
 	width:15%;}
@@ -146,12 +154,23 @@ body{background-color:rgb(182, 182, 182);}
     -webkit-transition: width 1s;
     transition: width 1s;}
 
-#markermock{
-    display:none;
+#rearSeq2boxes{
+    opacity:0;
     position: absolute;
     float: left;
     pointer-events:none;
 }
+
+#headtop2Arm{
+    opacity:0;
+    position: absolute;
+    float: left;
+    pointer-events:none;
+        -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+
 
 .mockrect{pointer-events: fill;}
 
@@ -163,3 +182,8 @@ body{background-color:rgb(182, 182, 182);}
     margin-top: 10%;}
 
 #holder{float:left;}
+
+#maedatag{
+    opacity: 1;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;}
