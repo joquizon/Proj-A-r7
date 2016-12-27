@@ -37,7 +37,9 @@
     .maedaboxA{
     right: 0;
     width: 50%;
-    float: left;}   
+    float: left;
+    -webkit-transition: width .5s;
+    transition: width .5s;}   
 
     .placer{width:100%;}
 
@@ -46,13 +48,46 @@
     float: left;}
 
     .maedabox2A{
-    width:34%;
-    float: left;}
+    width:41%;
+    float: left;
+    -webkit-transition: width .5s;
+    transition: width .5s;}
+
+    .subID{
+    color: white;
+    position: absolute;
+    margin-top: 58%;
+    z-index: 30;
+    font-family: kar;
+    right: 1%;}
+
+    .subID1{color: white;
+    position: absolute;
+    margin-top: 28.5%;
+    z-index: 30;
+    font-family: kar;
+    right: 1%;
+    font-size: 2vw;}
+
 
 #switchfirst{background-color:#ff7300;}
 #switchsecond{background-color: #3592b4;}
 #switchthird{background-color:#387991;}
 #switchfourth{background-color:#395b68;}
+
+.screencont{    width: 4%;
+    float: right;
+    margin-right: 1%;}
+
+.resets{
+    display:none;
+    width: 2.5%;
+    height:100%;
+    float: right;
+    margin-right: 1%;}
+
+#grid2{margin-right:6%;}
+#grid3{width:3.35%;}
 
 
 #cambutthold{    
@@ -65,11 +100,13 @@
     color: #333333;
     font-size: 1.5vw;
     font-family: nin;
-    text-align: center;}
+    text-align: center;
+    -webkit-transition: width .5s;
+    transition: width .5s;}
 
     #cambuttholdA {
     bottom: 4%;
-    width: 74%;
+    width: 86%;
     /* height: 32px; */
     /* margin-left: 33%; */
     /* position: absolute; */
@@ -78,13 +115,36 @@
     font-size: 1.5vw;
     font-family: nin;
     text-align: center;
-}
+    -webkit-transition: width .5s;
+    transition: width .5s;}
+
+    #cambuttholdB {
+    /* float: left; */
+    /* bottom: 4%; */
+    width: 50%;
+    /* margin-top: .5%; */
+    /* position: absolute; */
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.5vw;
+    font-family: nin;
+    text-align: center;
+    -webkit-transition: width .5s;
+    transition: width .5s;}
+
+    #cambuttholdC {
+    margin-top: 46%;
+    cursor: pointer;
+    -webkit-transition: width .5s;
+    transition: width .5s;}
 
 .cambutts{    
     float: right;
     height: 100%;
     width: 6%;
-    display: inline-block;}
+    display: inline-block;
+    -webkit-transition: width .5s;
+    transition: width .5s;}
 
 #cam{margin-right: 1%;
     float: right;
@@ -105,7 +165,10 @@
 
 
 #infocontainer{
-    width: 100%;}
+    width: 100%;
+    position:absolute;
+    margin-top:-3%;
+    z-index: 100}
    
     #logo {float: left;
     /* position: fixed; */
@@ -125,9 +188,9 @@
     
     #title{margin-left:5px;
     font-size: 23px;
-    color:black;
+    color:white;
     font-family:kar;
-    font-size: 1.25vw;
+    font-size: 1.05vw;
     display: inline-block;}
 
 
