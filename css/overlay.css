@@ -1,0 +1,344 @@
+
+/*robotcontrol svg parts/ buttons*/
+.head{fill:#FFFFFF;}
+.body{fill:#FFFFFF;}
+.bicepLT{fill:#FFFFFF;}
+.bicepRT{fill:#FFFFFF;}
+.foreLT{fill:#FFFFFF;}
+.foreRT{fill:#FFFFFF;}
+.thighLT{fill:#FFFFFF;}
+.thighRT{fill:#FFFFFF;}
+.legLT{fill:#FFFFFF;}
+.legRT{fill:#FFFFFF;}
+
+
+
+
+.overlay{
+    opacity:0;
+    position: absolute;
+    float: left;
+        -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+
+
+/*head seq 2 u*/
+	.seq2headA{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 3s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 3s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    33%  {opacity:0;}
+	    66%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    33%  {opacity:0;}
+	    66%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+		.seq2headB{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 3s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 4s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    44%  {opacity:0;}
+	    88%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    44%  {opacity:0;}
+	    88%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+
+			.seq2headC{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 3s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 5s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    22%  {opacity:0;}
+	    66%  {opacity:.6;}
+	    88%  {opacity:0;}
+	    100% {opacity:.6;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    22%  {opacity:0;}
+	    66%  {opacity:.6;}
+	    88%  {opacity:0;}
+	    100% {opacity:.6;}
+	}
+
+
+/*forearm seq2 un*/
+	.seq2foreLTA{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 3s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 3s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    33%  {opacity:0;}
+	    66%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    33%  {opacity:0;}
+	    66%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+
+	.seq2foreLTB{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 4s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 4s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    25%  {opacity:0;}
+	    50%  {opacity:.6;}
+	    75%  {opacity:0;}
+	    100% {opacity:.6;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    25%  {opacity:0;}
+	    50%  {opacity:.6;}
+	    75%  {opacity:0;}
+	    100% {opacity:.6;}
+	}
+
+	.seq2foreLTC{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 4s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 2s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    50%  {opacity:.0;}
+	    75%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    50%  {opacity:.0;}
+	    75%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+
+	.seq2foreLTD{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 4s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 3s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    20%  {opacity:.0;}
+	    40%  {opacity:.6;}
+	    60%  {opacity:.0;}
+	    80%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    20%  {opacity:.0;}
+	    40%  {opacity:.6;}
+	    60%  {opacity:.0;}
+	    80%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+		.seq2foreLTE{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 4s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 5s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    20%  {opacity:.0;}
+	    40%  {opacity:.6;}
+	    60%  {opacity:.0;}
+	    80%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    20%  {opacity:.0;}
+	    40%  {opacity:.6;}
+	    60%  {opacity:.0;}
+	    80%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+			.seq2foreLTF{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 4s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 2s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    20%  {opacity:.6;}
+	    60%  {opacity:.0;}
+	    80%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    20%  {opacity:.6;}
+	    60%  {opacity:.0;}
+	    80%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+				.seq2foreLTG{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 5s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 5s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    20%  {opacity:.6;}
+	    30%  {opacity:.0;}
+	    40%  {opacity:.6;}
+	   	55%  {opacity:.0;}
+	    66%  {opacity:.6;}
+	   	77%  {opacity:.0;}
+	   	88%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    20%  {opacity:.6;}
+	    30%  {opacity:.0;}
+	    40%  {opacity:.6;}
+	   	55%  {opacity:.0;}
+	    66%  {opacity:.6;}
+	   	77%  {opacity:.0;}
+	   	88%  {opacity:.6;}
+	    100% {opacity:.0;}
+	}
+
+					.seq2foreLTH{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 4s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 4s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    60%  {opacity:.6;}
+	    80%  {opacity:.0;}
+	    90%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    60%  {opacity:.6;}
+	    80%  {opacity:.0;}
+	    90%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+						.seq2foreLTI{
+	    opacity:.6;
+	    fill:#006F57;
+	    -webkit-animation: blinker 3s infinite; /* Chrome, Safari, Opera */
+	    animation: blinker 3s infinite;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    20%  {opacity:.6;}
+	    30%  {opacity:.0;}
+	    90%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
+	/* Standard syntax */
+	@keyframes blinker {
+	    0%   {opacity:.6;}
+	    10%  {opacity:.0;}
+	    20%  {opacity:.6;}
+	    30%  {opacity:.0;}
+	    90%  {opacity:.6;}
+	    100% {opacity:0;}
+	}
+
