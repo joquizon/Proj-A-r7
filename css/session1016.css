@@ -161,14 +161,7 @@ body{background-color:rgb(14, 14, 14);}
     pointer-events:none;
 }
 
-#headtop2Arm{
-    opacity:0;
-    position: absolute;
-    float: left;
-    pointer-events:none;
-        -webkit-transition: opacity 1s linear;
-    transition: opacity 1s linear;
-}
+
 
 
 
