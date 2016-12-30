@@ -781,7 +781,7 @@ $(".maedaboxA").attr("class","maedabox2");
 			$("#quad,#dub").hide();
 			$("#grid").show();
 			$(".notifpos2").css("margin-left","77.25%");
-			$("#subbutthold").css("width","86%");	
+			$("#subbutthold,.overlay").css("width","86%");	
 			$("#infocontainer").css("margin-top","0%");
 			$("#robotcontrol").attr("id","robotcontrolA");
 		});
@@ -800,7 +800,7 @@ $(".maedaboxA").attr("class","maedabox2");
 			$("#quad,#dub").show();
 			$("#full").show();
 			$(".notifpos2").css("margin-left","66.25%");			
-			$("#subbutthold").css("width","75%");
+			$("#subbutthold,.overlay").css("width","75%");
 			$("#infocontainer").css("margin-top","-3%");
 			$("#robotcontrolA").attr("id","robotcontrol");
 		});
@@ -831,6 +831,14 @@ $("#thighRT").click(function()
 			$("#"+z+"SeqM").css("opacity","1");
 		});
 
+		$(".foreRT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqU").css("opacity","1");
+			$("#"+z+"SeqM").css("opacity","1");
+		});
+
+
 		$(".bicepLT").click(function()
 		{ var z =event.target.id
 			console.log(z);
@@ -838,22 +846,33 @@ $("#thighRT").click(function()
 			$("#"+z+"SeqM").css("opacity","1");
 		});
 
+		$(".bicepRT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqU").css("opacity","1");
+			$("#"+z+"SeqM").css("opacity","1");
+		});
+
+
 		$(".thighRT").click(function()
 		{ var z =event.target.id
 			console.log(z);
 			$("#"+z+"SeqM").css("opacity","1");
+			$("#"+z+"SeqU").css("opacity","1");
 		});
 
 		$(".thighLT").click(function()
 		{ var z =event.target.id
 			console.log(z);
 			$("#"+z+"SeqM").css("opacity","1");
+			$("#"+z+"SeqU").css("opacity","1");
 		});
 
 		$(".legRT").click(function()
 		{ var z =event.target.id
 			console.log(z);
 			$("#"+z+"SeqM").css("opacity","1");
+			$("#"+z+"SeqU").css("opacity","1");
 		});
 
 
@@ -861,8 +880,15 @@ $("#thighRT").click(function()
 		{ var z =event.target.id
 			console.log(z);
 			$("#"+z+"SeqM").css("opacity","1");
+			$("#"+z+"SeqU").css("opacity","1");
 		});
 
+		$(".body").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqM").css("opacity","1");
+			$("#"+z+"SeqU").css("opacity","1");
+		});
 
 
 
