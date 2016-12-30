@@ -152,7 +152,7 @@ $(document).ready(function()
 
 		})
 
-	$(".robotgifs,.robotgifsL2,.robotgifsL3,.robotgifsL4").mousemove(function(event)
+	$(".robotgifs,.robotgifsL2,.robotgifsL3,.robotgifsL4,#headtop2SeqU,#headtop2SeqM,#foreLTtop2SeqM,#foreLTtop2SeqU").mousemove(function(event)
 		{
 			var yax = (event.pageY /7.5).toFixed(2)
 			var xax = (event.pageX /7.5).toFixed(2)
@@ -337,6 +337,15 @@ $(document).ready(function()
 
 
 	    $("#head"+t).attr("id","head"+nextA);
+	    $("#body"+t).attr("id","body"+nextA);
+	    $("#legRT"+t).attr("id","legRT"+nextA);
+	    $("#legLT"+t).attr("id","legLT"+nextA);
+	    $("#thighLT"+t).attr("id","thighLT"+nextA);
+	    $("#thighRT"+t).attr("id","thighRT"+nextA);
+	    $("#bicepRT"+t).attr("id","bicepRT"+nextA);
+	    $("#bicepLT"+t).attr("id","bicepLT"+nextA);
+	    $("#foreRT"+t).attr("id","foreRT"+nextA);
+	    $("#foreLT"+t).attr("id","foreLT"+nextA);
 
 	    // var mbcontain = $("#subbutthold").width()/13;
 	    
@@ -446,8 +455,27 @@ $(document).ready(function()
 	    var parper = mb/parent*100
 
 		// $("#movebar").css("width",parper-7+"%");
-		$("#head"+t).attr("id","head"+nextA);
+	    $("#head"+t).attr("id","head"+nextA);
+	    $("#body"+t).attr("id","body"+nextA);
+	    $("#legRT"+t).attr("id","legRT"+nextA);
+	    $("#legLT"+t).attr("id","legLT"+nextA);
+	    $("#thightLT"+t).attr("id","thightLT"+nextA);
+	    $("#thighRT"+t).attr("id","thighRT"+nextA);
+	    $("#bicepRT"+t).attr("id","bicepRT"+nextA);
+	    $("#bicepLT"+t).attr("id","bicepLT"+nextA);
+	    $("#foreRT"+t).attr("id","foreRT"+nextA);
+	    $("#foreLT"+t).attr("id","foreLT"+nextA);
+
 		$("#headtop14").attr("id","headtop13");
+		$("#thighRTtop14").attr("id","thighRTtop13");
+		$("#legRTtop14").attr("id","legRTtop13");
+		$("#armRTtop14").attr("id","armRTtop13");
+		$("#foreRTtop14").attr("id","foreRTtop13");
+		$("#bodytop14").attr("id","bodytop13");
+		$("#armLTtop14").attr("id","armLTtop13");
+		$("#foreLTtop14").attr("id","foreLTtop13");
+		$("#thighLTtop14").attr("id","thighLTtop13");
+		$("#legLTtop14").attr("id","legLTtop13");
 
 		$("#movebar").attr("class","slide"+next+"rev");
 	    $(".turnbuttr").attr("id",next);
@@ -785,11 +813,65 @@ $("#thighRT").click(function()
 		{ var z =event.target.id
 			console.log(z);
 		});
+
+
 		$(".head").click(function()
 		{ var z =event.target.id
 			console.log(z);
-			$("#"+z+"Arm").css("opacity","1");
+			$("#"+z+"SeqU").css("opacity","1");
+			$("#"+z+"SeqM").css("opacity","1");
+			$("#"+z+"SeqU").css("pointer-events","auto");
+			$("#"+z+"SeqM").css("pointer-events","auto");
+		});		
+
+		$(".foreLT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqU").css("opacity","1");
+			$("#"+z+"SeqM").css("opacity","1");
 		});
+
+		$(".bicepLT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqU").css("opacity","1");
+			$("#"+z+"SeqM").css("opacity","1");
+		});
+
+		$(".thighRT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqM").css("opacity","1");
+		});
+
+		$(".thighLT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqM").css("opacity","1");
+		});
+
+		$(".legRT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqM").css("opacity","1");
+		});
+
+
+		$(".legLT").click(function()
+		{ var z =event.target.id
+			console.log(z);
+			$("#"+z+"SeqM").css("opacity","1");
+		});
+
+
+
+
+
+
+
+
+
+
 
 		$("#maedatag").click(function(event)
 		{ var z =event.target.id
