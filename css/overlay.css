@@ -12,9 +12,20 @@
 .legRT{fill:#FFFFFF;}
 
 
+.toggleFader{
+	z-index: 10000;
+width:20px;
+height:20px;
+    position: absolute;
+        -webkit-transition: opacity 1s linear,width .5s;
+    transition: opacity 1s linear,width .5s;
+}
 
+#Mrk{background-color: blue;}
+#Umrk{background-color:pink;
+	margin-left: 26px}
 
-.overlay{
+.overlayU{
     opacity:0;
     position: absolute;
     float: left;
@@ -22,6 +33,14 @@
     transition: opacity 1s linear,width .5s;
 }
 
+
+.overlayM{
+    opacity:0;
+    position: absolute;
+    float: left;
+        -webkit-transition: opacity 1s linear,width .5s;
+    transition: opacity 1s linear,width .5s;
+}
 
 
 /*head seq 2 u*/
