@@ -1,0 +1,52 @@
+<svg   x="0px" y="0px" width="75%"  viewBox="0 0 960 540" style="enable-background:new 0 0 960 540;" xml:space="preserve">
+<g id="Layer_19">
+	<rect style="opacity:0;fill:#004A7E;" width="960" height="540"/>
+</g>
+<g id="legRT">
+	<rect x="348.834" y="383.285" style="opacity:0.6;fill:#004A7E;" width="79.477" height="77.002"/>
+	<rect x="418.092" y="351.291" style="opacity:0.6;fill:#004A7E;" width="54.704" height="56.01"/>
+	<rect x="439.954" y="314.985" style="opacity:0.6;fill:#004A7E;" width="59.841" height="63.304"/>
+</g>
+<g id="foreRT">
+	<rect x="491.326" y="328.042" style="opacity:0.6;fill:#004A7E;" width="65.465" height="32.999"/>
+	<rect x="516.324" y="295.29" style="opacity:0.6;fill:#004A7E;" width="55.904" height="61.693"/>
+</g>
+<g id="thighRT">
+	<rect x="478.079" y="270.295" style="opacity:0.6;fill:#004A7E;" width="43.464" height="57.747"/>
+	<rect x="510.076" y="275.293" style="opacity:0.6;fill:#004A7E;" width="45.965" height="24.25"/>
+</g>
+<g id="legLT">
+	<rect x="268.825" y="300.293" style="opacity:0.6;fill:#004A7E;" width="79.477" height="77.002"/>
+	<rect x="285.837" y="231.797" style="opacity:0.6;fill:#004A7E;" width="69.964" height="80.498"/>
+	<rect x="255.838" y="363.787" style="opacity:0.6;fill:#004A7E;" width="62.466" height="61"/>
+	<rect x="234.945" y="374.286" style="opacity:0.6;fill:#004A7E;" width="37.373" height="32.013"/>
+</g>
+<g id="thighLT">
+	<rect x="344.061" y="199.307" style="opacity:0.6;fill:#004A7E;" width="19.24" height="57.993"/>
+	<rect x="349.82" y="217.048" style="opacity:0.6;fill:#004A7E;" width="125.226" height="71.246"/>
+</g>
+<g id="body">
+	<rect x="476.102" y="216.544" style="opacity:0.6;fill:#004A7E;" width="65.465" height="61.267"/>
+	<rect x="491.578" y="151.801" style="opacity:0.6;fill:#004A7E;" width="65.465" height="78.746"/>
+	<rect x="519.327" y="160.297" style="opacity:0.6;fill:#004A7E;" width="49.713" height="48.75"/>
+	<rect x="538.15" y="253.421" style="opacity:0.6;fill:#004A7E;" width="29.141" height="26.248"/>
+</g>
+<g id="bicepLT">
+	<rect x="393.3" y="131.552" style="opacity:0.6;fill:#004A7E;" width="129.743" height="95.995"/>
+</g>
+<g id="bicepRT">
+	<rect x="595.073" y="243.793" style="opacity:0.6;fill:#004A7E;" width="36.402" height="86.941"/>
+	<rect x="562.994" y="266.617" style="opacity:0.6;fill:#004A7E;" width="39.982" height="78.367"/>
+</g>
+<g id="foreLT">
+	<rect x="331.053" y="39.061" style="opacity:0.6;fill:#004A7E;" width="37.003" height="71.492"/>
+	<rect x="327.303" y="87.809" style="opacity:0.6;fill:#004A7E;" width="74.996" height="95.995"/>
+	<rect x="354.302" y="173.304" style="opacity:0.6;fill:#004A7E;" width="45.503" height="57.993"/>
+</g>
+<g id="head">
+	<rect x="533.98" y="196.294" style="opacity:0.6;fill:#004A7E;" width="77.994" height="69.944"/>
+	<rect x="563.979" y="98.049" style="opacity:0.6;fill:#004A7E;" width="71.994" height="102.942"/>
+	<rect x="613.74" y="117.305" style="opacity:0.6;fill:#004A7E;" width="43.229" height="85.937"/>
+	<rect x="599.977" y="154.803" style="opacity:0.6;fill:#004A7E;" width="85.492" height="77.687"/>
+</g>
+</svg>
