@@ -806,12 +806,25 @@ $(".maedaboxA").attr("class","maedabox2");
 		});
 
 
-		$("#Mrk").click(function()
-		{
-			$(".overlayM").fadeToggle()
-		});
 
-		$("#Umrk").click(function()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		$("#Mrk").click(function()
 		{
 			$(".overlayU").fadeToggle()
 		});
