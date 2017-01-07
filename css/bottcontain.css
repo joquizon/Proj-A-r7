@@ -16,12 +16,12 @@
     -webkit-transition: width .5s;
     transition: width .5s;}
 
-#botcontainer2 {
+/*#botcontainer2 {
     width: 100%;
      position: absolute; 
     bottom:5%;
     -webkit-transition: width .5s;
-    transition: width .5s;}
+    transition: width .5s;}*/
 
     #botcontainer2 {
     background-color: rgb(14,14,14);
