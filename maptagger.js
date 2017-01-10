@@ -40,8 +40,8 @@ $(document).ready(function()
 		   	    $("#subtop2").attr("id","subtop"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtop"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtop"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtop"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtop"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtop"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 
 			});
 
@@ -84,8 +84,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -129,8 +129,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -174,8 +174,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -219,8 +219,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -264,8 +264,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -308,8 +308,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -353,8 +353,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -397,8 +397,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -441,8 +441,8 @@ $(document).ready(function()
 				$("#subtop2").attr("id","subtopB"+ts);
 
 		   	    $("#if1").clone(true).attr("id","subtopB"+ts+"mrkpop").appendTo("#topper");
-		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-15+"%");
-				$("#subtopB"+ts+"mrkpop").css("margin-left",y1+2+"%");
+		   	    $("#subtopB"+ts+"mrkpop").css("margin-top",z1-18+"%");
+				$("#subtopB"+ts+"mrkpop").css("margin-left",y1-1.23+"%");
 			});
 
 
@@ -459,12 +459,12 @@ $(document).ready(function()
 
 
 
-		$(".mrk,.mrk1A").click(function(event)
+		$("#posit").click(function(event)
 		{
-			var par =(event.target.parentNode.parentNode.parentNode.id);
-			$(".mrk,.mrk1A").attr("id", par+"mrk");
-			var marker = event.target.id
-			$("#"+marker+"pop").show();
+			var par =(event.target.parentNode.id);
+			$(".tagshut").attr("id", par+"mrk");
+			$("#"+par+"mrkpop").show();
+			console.log(par);
 		});
 
 });
