@@ -104,5 +104,66 @@ $(document).ready(function()
 		// 	$("#subscid1"+par).text(t);		
 		// });
 
+ 
+$("#artbutton").click(function()
+	{			var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+		console.log("we good");
+		$(this).hide();
+		$("#grid4").show();
+		$(".maedabox,.maedabox2,#logo,#wrdmrk,#infotag,#cam,#boxer,#notif,#crosscontain,.screencont").hide();
+		$("#boxer,#crosscontain").css("margin-left","-200%");
+		$("body").css("background-color","rgb(16, 16, 16)");
+				$("#botcontainer").attr("id","botcontainer5");
+		$("#mainrobotcontainer").css("margin-left", "12.5%"); 
+		$("#subbutthold").attr("id","subbuttholdB");
+				$("#butthold").attr("id","buttholdB");
+				$("#grid4").css("width","4%");
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).appendTo("#log");
+					$("#bare").clone(true).attr("class","logshow").appendTo("#log");
+					
+
+	});
+
+$("#grid4").click(function()
+	{
+		console.log("we good too");
+		$(this).hide();
+		$("#artbutton").show();
+		$(".maedabox,.maedabox2,#logo,#wrdmrk,#infotag,#cam,#boxer,#notif,#crosscontain,.screencont").show();
+		$("#boxer,#crosscontain").css("margin-left","0%");
+		$("body").css("background-color","rgb(14, 14, 14)");
+				$("#botcontainer5").attr("id","botcontainer");
+		$("#mainrobotcontainer").css("margin-left", "0%"); 
+		$("#subbuttholdB").attr("id","subbutthold");
+				$("#buttholdB").attr("id","butthold");
+	});
+
+
 
 });
