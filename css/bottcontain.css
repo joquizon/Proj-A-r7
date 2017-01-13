@@ -13,8 +13,8 @@
     width: 100%;
      position: fixed; 
     bottom:5%;
-    -webkit-transition: width .5s;
-    transition: width .5s;}
+    -webkit-transition: width .5s, margin-left .5s;
+    transition: width .5s, margin-left .5s;}
 
 /*#botcontainer2 {
     width: 100%;
@@ -26,7 +26,8 @@
     #botcontainer2 {
     background-color: rgb(14,14,14);
     width: 100%;
-     position: fixed;
+     position: fixed;.
+     bottom:30%;
      -webkit-transition: width .5s;
     transition: width .5s;}
 
@@ -42,7 +43,15 @@
     background-color: rgb(14,14,14);
     width: 100%;
      position: fixed;
-         bottom:4%;
+         bottom:0%;
+     -webkit-transition: width .5s;
+    transition: width .5s;}
+
+        #botcontainer5 {
+    background-color: rgb(16,16,16);
+    width: 100%;
+     position: fixed;
+         bottom:10%;
      -webkit-transition: width .5s;
     transition: width .5s;}
 
@@ -59,8 +68,8 @@
     width: 75%;
     pointer-events: none;
     opacity: .25;
-    -webkit-transition: width .5s;
-    transition: width .5s;}
+    -webkit-transition: width .5s, margin-left .5s;
+    transition: width .5s, margin-left .5s;}
 
     #boxer1{    
     display: none;    
@@ -68,8 +77,8 @@
     width: 86%;
     pointer-events: none;
     opacity: .25;
-    -webkit-transition: width .5s;
-    transition: width .5s;}
+    -webkit-transition: width .5s, margin-left .5s;
+    transition: width .5s, margin-left .5s;}
 
     #boxerA {
     display: none;
@@ -78,8 +87,8 @@
     z-index: 2;
     pointer-events: none;
     opacity: .25;
-    -webkit-transition: width .5s;
-    transition: width .5s;}
+    -webkit-transition: width .5s, margin-left .5s;
+    transition: width .5s, margin-left .5s;}
 
 
     .notifpos2{
