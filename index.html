@@ -19,9 +19,11 @@
 		<meta content="utf-8" http-equiv="encoding">
 	<head>
 	<body>
+
+
 		<!-- there should be  different buttons that advance at different increments advance by 2 by 3 by 4 etc.  -->
 
-		<svg id="wrdmrk" width="3%"  viewBox="0 0 40.578 134.333" style="enable-background:new 0 0 40.578 134.333;"xml:space="preserve">
+<!-- 		<svg id="wrdmrk" width="3%"  viewBox="0 0 40.578 134.333" style="enable-background:new 0 0 40.578 134.333;"xml:space="preserve">
 			<style type="text/css">
 				<![CDATA[
 					.st0wa{fill:#101010;}
@@ -74,10 +76,8 @@
 					c0.762,0,1.143-0.254,1.143-0.761v-0.38c0-0.508-0.381-0.762-1.143-0.762c-1.268,0-1.902-0.381-1.902-1.141v-0.381
 					c0-1.015,0.635-1.521,1.902-1.521c1.269,0,1.902,0.507,1.902,1.521h-0.76C34.833,128.64,34.452,128.386,33.69,128.386z"/>
 			</g>
-		</svg>
+		</svg> -->
 
-		<div id="botcontainer">
-			<div id="infocontainer">
 				<svg  id="logo" x="0px" y="0px" width="20%" viewBox="0 0 72 60.404" style="enable-background:new 0 0 72 60.404;" xml:space="preserve">
 							<style type="text/css">
 							<![CDATA[
@@ -97,14 +97,10 @@
 								</g>
 							</g>
 						</svg>
-				<div id="infotag">
-					<p id="title">
-								PROJ// A-R7 SESSION// 610-y04/08
-					</p>
-				</div>
-	<!-- 			<p id="date">
-				</p> -->
-			</div>
+
+
+		<div id="botcontainer">
+
 
 
 			<div id="lander">
@@ -10329,13 +10325,13 @@
 					<img id="aaatop13rev" class="robotgifs" src="gifs/rearV/aaatop13rev.gif">	
 			</div>
 			<!-- maeda boxes sub cams -->
-			<div class="maedabox" id="mbox1">
+			<div class="maedabox2" id="mbox1">
 				<div class="inside" id="switchfirst">
-					1
+					1-CAM//MS-1231
 					
 				</div>
 				<p class="subID">
-					CAM//MS-1231
+					
 				</p>				
 				<img id="aaatop1jr" class="robotgifsjr" src="gifs/rearV/aaatop13.gif">
 					<img id="aaatop2jr" class="robotgifsjr" src="gifs/rearV/aaatop1.gif">
@@ -10369,10 +10365,10 @@
 
 				<div class="maedabox2" id="mbox2">
 				  <div class="inside" id="switchsecond">
-					2
+					2-CAM//NH-0626
 				  </div>
 				<p class="subID">
-					CAM//NH-0626
+					
 				</p>	
 					<img id="atop1jr" class="robotgifsL2jr" src="gifs/fV/atop13.gif">
 						<img id="atop2jr" class="robotgifsL2jr" src="gifs/fV/atop1.gif">
@@ -10406,10 +10402,10 @@
 
 				<div class="maedabox2" id="mbox3">	
 					<div class="inside" id="switchthird">
-						3
+						3-CAM//LM-1006
 					</div>
 				<p class="subID">
-					CAM//LM-1006
+					
 				</p>
 					<img id="aatop1jr" class="robotgifsL3jr" src="gifs/sideV/aatop13.gif">
 					<img id="aatop2jr" class="robotgifsL3jr" src="gifs/sideV/aatop1.gif">
@@ -10442,12 +10438,12 @@
 				</div>
 
 
-				<div class="maedabox2" id="mbox4">	
+				<div class="maedabox" id="mbox4">	
 					<div class="inside" id="switchfourth">
-						4
+						4-CAM//LM-1016
 					</div>
 				<p class="subID">
-					CAM//LM-1016
+					
 				</p>
 					<img id="top1jr" class="robotgifsjrMaincam" src="gifs/3q/top13.gif">
 						<img id="top2jr" class="robotgifsjrMaincam" src="gifs/3q/top1.gif">
@@ -10479,9 +10475,47 @@
 						<img id="top13revjr" class="robotgifsjrMaincam" src="gifs/3q/top13rev.gif">	
 				</div>
 
+			<div id="infocontainer">
+
+				<div id="infotag">
+									<div id="log">
+						<p class="loghide" id="baretime">
+							gfx bare-view
+						</p>
+						<p class="loghide" id="bare">
+							*gfx bare-view
+						</p>
+						<p class="loghide" id="bare2">
+							*full scr-view
+						</p>
+
+
+					</div>
+					<p id="title">
+								PROJ// A-R7 SESSION// 610-y04/08<br>
+								Camera(s): 4<br>
+								Designation: (NNCY,MLSS,LR,LR)<br>
+								Object: Non-Consumable<br>
+					</p>
+
+				</div>
+
+			</div>
 			
 			<div id="butthold">
-							<div id="cambutthold">				
+								  <div id="subbutthold">
+				      <div class="slider0" id="movebar">
+					  </div>
+
+					  
+				  </div>	
+											  
+					  	<div id="cambutthold">
+					  
+					  <div class="turnbutt" id="top1">
+					  </div>
+					  <div class="turnbuttr" id="top1">
+					  </div>				
 				<div class="cambutts" id="cam4">
 					4
 				</div>			
@@ -10497,6 +10531,28 @@
 				<div class="cambutts" id="cam1">
 					1
 				</div>
+				
+				<div id="artbutton">
+					<p id="artlabel">
+						*
+					</p>
+				</div>	
+
+				<svg class="resets" id="grid4" x="0px" y="0px" viewBox="0 0 48.917 42" style="enable-background:new 0 0 48.917 42;" xml:space="preserve">
+					<style type="text/css">
+					<![CDATA[
+						.st0grid{fill:#4C6861;}
+						.st1grid{fill:none;stroke:#101010;stroke-width:3;}
+					]]>
+					</style>
+					<rect class="st0grid" width="48.917" height="42"/>
+					<path class="st1grid" d="M39.478,31.824c0,1.004-0.693,1.814-1.548,1.814H11.018c-0.508,0-0.959-0.286-1.241-0.729
+						c-0.193-0.3-0.308-0.677-0.308-1.084V10.073c0-1.001,0.693-1.813,1.548-1.813H37.93c0.854,0,1.548,0.812,1.548,1.813V31.824
+						L39.478,31.824z"/>
+					<polyline class="st1grid" points="25.654,7.726 25.654,16.521 25.654,33.478 "/>
+					<line class="st1grid" x1="39.548" y1="17.761" x2="25.654" y2="17.761"/>
+				</svg>
+
 			<!-- <img  src="quad.svg"> -->
 				<svg  x="0px" y="0px" class="screencont" id="quad" viewBox="0 0 48.917 42" style="enable-background:new 0 0 48.917 42;" xml:space="preserve">
 					<style type="text/css">
@@ -10521,6 +10577,7 @@
 				</svg>
 
 				<!-- <img  src="grid.svg"> -->
+
 				<svg class="resets" id="grid2" x="0px" y="0px" viewBox="0 0 48.917 42" style="enable-background:new 0 0 48.917 42;" xml:space="preserve">
 					<style type="text/css">
 					<![CDATA[
@@ -10551,6 +10608,8 @@
 					<path class="st0dub" d="M45.958,27.115c0,0.809-0.415,1.465-0.928,1.465H26.803c-0.513,0-0.928-0.656-0.928-1.465V15.507
 						c0-0.81,0.415-1.466,0.928-1.466h18.228c0.513,0,0.928,0.657,0.928,1.466V27.115z"/>
 				</svg>	
+
+
 		
 				<svg class="resets" id="grid3" x="0px" y="0px" viewBox="0 0 48.917 42" style="enable-background:new 0 0 48.917 42;" xml:space="preserve">
 					<style type="text/css">
@@ -10601,14 +10660,7 @@
 				</p>
 
 			</div>
-				  <div id="subbutthold">
-				      <div class="slider0" id="movebar">
-					  </div>
-					  <div class="turnbutt" id="top1">
-					  </div>
-					  <div class="turnbuttr" id="top1">
-					  </div>
-				  </div>					
+				
 			</div>
 			
 
