@@ -1,5 +1,7 @@
 $(document).ready(function()
 {
+
+				
 // can you do mousediag1 on .maedabox
 	console.log("run");
 
@@ -11,21 +13,20 @@ $(document).ready(function()
 	// clock log
 	setInterval(function clocker()
 		{
-			var month = [
-			  "January",
-			"February",
-			"March",
-			"April",
+var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
 			 "May",
-			"June",
-			"July",
-			"August",
-			"September",
-			"October",
-			"November",
-			"December"];
-
-			var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
 			var currentTime = new Date ( );
 			var td = currentTime.getDate();
 			var tm = currentTime.getMonth();
@@ -39,10 +40,6 @@ $(document).ready(function()
 			var day = day[tdy]
 			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
 			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
-
-			$("#date").html(timelist);
-			$("#agtno2").html("missing/recovering(!) "+tmm);
-			$("#browser").html(" "+browser);
 
 		},1);
 
@@ -152,8 +149,51 @@ $(document).ready(function()
 
 		})
 
+
+
+	$(".robotgifs,.robotgifsL2,.robotgifsL3,.robotgifsL4,#topper,#crosscontain,#crossesBott,#crossesTop,CrossesMid").mouseover(function(event)
+		{
+			var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+			$("#log").scrollTop(0);
+
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+										$("#barefield").clone(true).attr("class","logshow").prependTo("#log");
+									});
+
+
+
+
 	$(".robotgifs,.robotgifsL2,.robotgifsL3,.robotgifsL4,.overlay").mousemove(function(event)
 		{
+		
+
 			var yax = (event.pageY /7.5).toFixed(2)
 			var xax = (event.pageX /7.5).toFixed(2)
 			
@@ -321,6 +361,39 @@ $(document).ready(function()
 	// gifswitcher
 	$(".turnbutt").click(function(event)
 	  {
+	  	var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+
+											$("#log").scrollTop(0);
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#bareadvance").clone(true).attr("class","logshow").prependTo("#log");
+
+
 		var layertop = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13"]
 		var layertopA = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13","top14"]
 		var layertopslide = ["slidetop1","slidetop2","slidetop3","slidetop4","slidetop5","slidetop6","slidetop7","slidetop8","slidetop9","slidetop10","slidetop11","slidetop12","slidetop13","slidetop1"]
@@ -441,6 +514,37 @@ $(document).ready(function()
 
 	$(".turnbuttr").click(function(event)
 	  {
+	  	var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+
+											$("#log").scrollTop(0);
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#bareretreat").clone(true).attr("class","logshow").prependTo("#log");
 		var layertop = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13"]
 		var layertopA = ["top1","top2","top3","top4","top5","top6","top7","top8","top9","top10","top11","top12","top13","top14"]
 		
@@ -573,6 +677,36 @@ $(document).ready(function()
 				$(".maedaboxA").attr("class","maedabox2");
 				$(".maedabox").attr("class","maedabox2");
 				$("#mbox1").attr("class","maedabox");
+				var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+				$("#log").scrollTop(0);
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#baresubcam1").clone(true).attr("class","logshow").prependTo("#log");
 
 			});
 
@@ -585,6 +719,38 @@ $(document).ready(function()
 
 	$("#cam1").click(function()
 			{	
+
+				var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+				$("#log").scrollTop(0);
+
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#barecam1").clone(true).attr("class","logshow").prependTo("#log");
 				$(".robotgifs").css("margin-left","0");
 				$("#topper").css("margin-left","0");
 				$(".robotgifsL2").css("margin-left","-300%");
@@ -609,10 +775,71 @@ $(document).ready(function()
 				$(".maedaboxA").attr("class","maedabox2");
 				$(".maedabox").attr("class","maedabox2");
 				$("#mbox2").attr("class","maedabox");
+								var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+								$("#log").scrollTop(0);
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#baresubcam2").clone(true).attr("class","logshow").prependTo("#log");
 			});
 
 	$("#cam2").click(function()
 			{	
+								var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+								$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#barecam2").clone(true).attr("class","logshow").prependTo("#log");
 				$(".robotgifsL2").css("margin-left","0");
 				$(".robotgifs").css("margin-left","-300%");
 				$("#topper").css("margin-left","-300%");
@@ -636,10 +863,72 @@ $(document).ready(function()
 $(".maedaboxA").attr("class","maedabox2");
 				$(".maedabox").attr("class","maedabox2");
 				$("#mbox3").attr("class","maedabox");
+								var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+								$("#log").scrollTop(0);
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#baresubcam3").clone(true).attr("class","logshow").prependTo("#log");
 			});
 
 	$("#cam3").click(function()
 			{	
+
+								var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+								$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#barecam3").clone(true).attr("class","logshow").prependTo("#log");
 				$(".robotgifsL3").css("margin-left","0%");
 				$(".robotgifs").css("margin-left","-300%");
 				$("#topper").css("margin-left","-300%");
@@ -663,10 +952,71 @@ $(".maedaboxA").attr("class","maedabox2");
 $(".maedaboxA").attr("class","maedabox2");
 				$(".maedabox").attr("class","maedabox2");
 				$("#mbox4").attr("class","maedabox");
+								var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+								$("#log").scrollTop(0);
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#baresubcam4").clone(true).attr("class","logshow").prependTo("#log");
 			});
 
 	$("#cam4").click(function()
 			{	
+								var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+								$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#barecam4").clone(true).attr("class","logshow").prependTo("#log");
 				$(".robotgifsL4").css("margin-left","0%");
 				$(".robotgifs").css("margin-left","-300%");
 				$("#topper").css("margin-left","-300%");
@@ -694,6 +1044,38 @@ $(".maedaboxA").attr("class","maedabox2");
 
 	$("#quad").click(function()
 		{
+
+			var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+			$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#bare4").clone(true).attr("class","logshow").prependTo("#log");
 			$(".maedabox2").attr("class","maedabox2A");
 			$(".maedabox").attr("class","maedabox2A");
 			$("#mainrobotcontainer").hide();
@@ -731,7 +1113,39 @@ $(".maedaboxA").attr("class","maedabox2");
 
 
 	$("#dub").click(function()
-	{			
+	{	
+
+			var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+			$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#bare3").clone(true).attr("class","logshow").prependTo("#log");		
 
 		$(".maedabox2").hide();
 		$(".maedabox").attr("class","maedaboxA");
@@ -785,6 +1199,7 @@ $(".maedaboxA").attr("class","maedabox2");
 // full screen
 		$("#full").click(function()
 		{
+
 			var month = [
 			  "Jan",
 			"Feb",
@@ -812,8 +1227,10 @@ $(".maedaboxA").attr("class","maedabox2");
 			var day = day[tdy]
 			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
 			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
-					$("#baretime").clone(true).attr("class","logshow").html(timelist).appendTo("#log");
-					$("#bare2").clone(true).attr("class","logshow").appendTo("#log");
+			$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#bare2").clone(true).attr("class","logshow").prependTo("#log");
 			$("#mainrobotcontainer").attr("id","mainrobotcontainer1");
 			$("#topper").css("width","86%");
 			$("#botcontainer").attr("id","botcontainer4");
