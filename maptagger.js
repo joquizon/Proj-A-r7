@@ -3,7 +3,34 @@ $(document).ready(function()
 		$("#subtopperM").draggable();
 
 		$(".toppermap").click(function(event)
-			{
+			{var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
 				
 				var y = $(topper).width();
 				var z =$(topper).height();
@@ -26,7 +53,7 @@ $(document).ready(function()
 				console.log(yaxL);
 				console.log(x4);			
 				console.log(z1, y1);
-				
+				 
 				var targ = event.target.id
 				var ts = (event.timeStamp).toFixed(0)
 				var h = $("#"+targ).position();
@@ -35,6 +62,7 @@ $(document).ready(function()
 				var ht= h.top
 				var hl= h.left
 				$("#posit").html(yaxL+"'"+"__"+xaxL+"''");
+				$("#bareposit").clone(true).attr("class","logshow").html("position"+yaxL+"'"+"__"+xaxL+"''"+"marked").prependTo("#log");
 				// $("#subposit").html(yaxL+"'"+"__"+xaxL+"''");
 
 				$("#subtop").clone(true).attr("id","subtop2").appendTo("#topper");
@@ -144,8 +172,8 @@ $("#artbutton").click(function()
 		$("#subbutthold").attr("id","subbuttholdB");
 				$("#butthold").attr("id","buttholdB");
 				$("#grid4").css("width","4%");
-					$("#baretime").clone(true).attr("class","logshow").html(timelist).appendTo("#log");
-					$("#bare").clone(true).attr("class","logshow").appendTo("#log");
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#bare").clone(true).attr("class","logshow").prependTo("#log");
 					
 
 	});
