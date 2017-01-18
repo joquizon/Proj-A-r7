@@ -179,8 +179,20 @@
     overflow-y: scroll;
 }
 
-.loghide{display: none;}
+/*#bare{display: inline-block;}
+#bare2{display: inline-block;}
+#bare3{display: inline-block;}
+#bare4{display: inline-block;}
+#bare4{display: inline-block;}
+#bareposit{display: inline-block;}
+#barefield{display: inline-block;}
+
+#baretime{display: inline-block;}*/
+.loghide{display: none;
+font-size: 0vw}
 .logshow {
+    display: inline-block;
+    font-size: 1.1vw;
     color: yellow;
     font-family: nin;
     margin-right: 7%;
