@@ -1,6 +1,10 @@
 $(document).ready(function()
 {
 
+	$(window).load(function() {
+	$("#botcontainer").show();
+});
+
 				
 // can you do mousediag1 on .maedabox
 	console.log("run");
@@ -39,9 +43,9 @@ var month = [
 			var monthL = month[tm]
 			var day = day[tdy]
 			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
-			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
-
-		},1);
+			var timelist = browser+"///"+td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+			$("#timeclock").html(timelist).prependTo("#watchholder");
+		});
 
 	$(".headmarker").click(function()
 		{
@@ -1076,6 +1080,7 @@ $(".maedaboxA").attr("class","maedabox2");
 			
 					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
 					$("#bare4").clone(true).attr("class","logshow").prependTo("#log");
+			$("#infotag").hide();
 			$(".maedabox2").attr("class","maedabox2A");
 			$(".maedabox").attr("class","maedabox2A");
 			$("#mainrobotcontainer").hide();
@@ -1089,7 +1094,7 @@ $(".maedaboxA").attr("class","maedabox2");
 		$("#subbutthold").attr("id","subbuttholdD");
 		$("#artbutton").hide();		
 		$(".turnbutt").css("margin-right","9%");	
-
+		$(".inside").css("pointer-events","none");
 		});
 	$("#grid2").click(function()
 	{
@@ -1107,7 +1112,8 @@ $(".maedaboxA").attr("class","maedabox2");
 		$("#subbuttholdD").attr("id","subbutthold");	
 		$("#artbutton").show();				
 		$(".turnbutt").css("margin-right","0%");	
-
+		$("#infotag").show();
+		$(".inside").css("pointer-events","auto");
 
 	});
 
@@ -1146,7 +1152,7 @@ $(".maedaboxA").attr("class","maedabox2");
 			
 					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
 					$("#bare3").clone(true).attr("class","logshow").prependTo("#log");		
-
+		$("#infotag").hide();
 		$(".maedabox2").hide();
 		$(".maedabox").attr("class","maedaboxA");
 		$("#mainrobotcontainer").attr("id","mainrobotcontainerA");
@@ -1194,6 +1200,7 @@ $(".maedaboxA").attr("class","maedabox2");
 		$("#robotcontrolB").attr("id","robotcontrol");
 		$("#robotcontrolC").hide();
 		$("#artbutton").show();
+		$("#infotag").show();
 	});
 
 // full screen
@@ -1231,6 +1238,7 @@ $(".maedaboxA").attr("class","maedabox2");
 			
 					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
 					$("#bare2").clone(true).attr("class","logshow").prependTo("#log");
+			$("#infotag").hide();
 			$("#mainrobotcontainer").attr("id","mainrobotcontainer1");
 			$("#topper").css("width","86%");
 			$("#botcontainer").attr("id","botcontainer4");
@@ -1266,6 +1274,7 @@ $(".maedaboxA").attr("class","maedabox2");
 			$("#topper").css("width","75%");
 			$("#robotcontrolA").attr("id","robotcontrol");
 					$("#artbutton").show();
+					$("#infotag").show();
 		});
 
 
@@ -1277,93 +1286,90 @@ $(".maedaboxA").attr("class","maedabox2");
 
 
 
-$("#Mrk").click(function()
-		{
-			var w =$(".suboverlay").children();
-			var w2 =$(".suboverlay2").children();
+// $("#Mrk").click(function()
+// 		{
+// 			var w =$(".suboverlay").children();
+// 			var w2 =$(".suboverlay2").children();
 			
 
-			console.log(w,w2);
-			$("#" + w2).attr("id","xxx");
-		});
+// 			console.log(w,w2);
+// 			$("#" + w2).attr("id","xxx");
+// 		});
 
 
-		$(".head").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqU").fadeToggle(1000);
-			$("#"+z+"SeqM").fadeToggle(1000);
+// 		$(".head").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
 
-		});		
+// 		});		
 
-		$(".foreLT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqU").fadeToggle(1000);
-			$("#"+z+"SeqM").fadeToggle(1000);
-		});
+// 		$(".foreLT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 		});
 
-		$(".foreRT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqU").fadeToggle(1000);
-			$("#"+z+"SeqM").fadeToggle(1000);
-		});
-
-
-		$(".bicepLT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqU").fadeToggle(1000);
-			$("#"+z+"SeqM").fadeToggle(1000);
-		});
-
-		$(".bicepRT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqU").fadeToggle(1000);
-			$("#"+z+"SeqM").fadeToggle(1000);
-		});
+// 		$(".foreRT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 		});
 
 
-		$(".thighRT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqM").fadeToggle(1000);
-			$("#"+z+"SeqU").fadeToggle(1000);
-		});
+// 		$(".bicepLT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 		});
 
-		$(".thighLT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqM").fadeToggle(1000);
-			$("#"+z+"SeqU").fadeToggle(1000);
-		});
-
-		$(".legRT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqM").fadeToggle(1000);
-			$("#"+z+"SeqU").fadeToggle(1000);
-		});
+// 		$(".bicepRT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 		});
 
 
-		$(".legLT").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqM").fadeToggle(1000);
-			$("#"+z+"SeqU").fadeToggle(1000);
-		});
+// 		$(".thighRT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 		});
 
-		$(".body").click(function()
-		{ var z =event.target.id
-			console.log(z);
-			$("#"+z+"SeqM").fadeToggle(1000);
-			$("#"+z+"SeqU").fadeToggle(1000);
-		});
+// 		$(".thighLT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 		});
+
+// 		$(".legRT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 		});
 
 
+// 		$(".legLT").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 		});
 
+// 		$(".body").click(function()
+// 		{ var z =event.target.id
+// 			console.log(z);
+// 			$("#"+z+"SeqM").fadeToggle(1000);
+// 			$("#"+z+"SeqU").fadeToggle(1000);
+// 		});
 
 
 
@@ -1371,15 +1377,18 @@ $("#Mrk").click(function()
 
 
 
-		$("#maedatag").click(function(event)
-		{ var z =event.target.id
-			console.log(z)
-		});
 
-		$("#headtop3").click(function(event)
-		{ var z =event.target.id
-			console.log(z)
-		});
+
+
+// 		$("#maedatag").click(function(event)
+// 		{ var z =event.target.id
+// 			console.log(z)
+// 		});
+
+// 		$("#headtop3").click(function(event)
+// 		{ var z =event.target.id
+// 			console.log(z)
+// 		});
 
 
 // MOVE ID'S OF ROBOT CONTROL TO ACTUAL PATHS!!! OTHERWISE EVENT.TARGET.ID MALFUNCTION!!!!
