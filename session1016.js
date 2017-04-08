@@ -2,7 +2,7 @@ $(document).ready(function()
 {
 
 	$(window).load(function() {
-	$("#botcontainer").show();
+	$("#lander").show();
 });
 
 				
@@ -73,12 +73,52 @@ var month = [
 	// temp Charger
 	$("#lander").click(function()
 		{
+			var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+			$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#systemstart").clone(true).attr("class","logshow").prependTo("#log");
+
+
+			$("#botcontainer").show();
+			$("body").css("background-color","rgb(14,14,14)");
+
+			$(".stGL").attr("class","stGL2");	
+			$(".st1L").attr("class","st1L2");	
+			$("#title").show();			
 		// assign to a start or activate button. maybe a landing page?
 			$(".notifpos").fadeIn(500).delay(3000)
 		    	.queue(function(next) 
 		      { 
 		        $(".notifpos").attr("class","notifpos2").delay(3000).fadeOut();
 		        $("#notif").text("ACTIVE");
+
 		        next(); 
 		      });
 
@@ -361,10 +401,38 @@ var month = [
 			$("#"+id).css("pointer-events","none");
 		});
 
+$(".turnbuttr").css("pointer-events","none");
+
+$('.turnbutt').click(function() {
+    var x = ( this.id );
+    if (x=="top13")
+    {
+    	$(".turnbutt").css("pointer-events","none");
+    }
+});
+
+$('.turnbuttr').click(function() {
+    var x = ( this.id );
+    if (x=="top2")
+    {
+    	$(".turnbuttr").css("pointer-events","none");
+    }
+});
+
+$('.turnbuttr').click(function() {
+    var x = ( this.id );
+    if (x=="top1")
+    {
+    	$(".turnbutt").css("pointer-events","auto");
+    }
+});
+
+
 
 	// gifswitcher
 	$(".turnbutt").click(function(event)
 	  {
+	  	$(".turnbuttr").css("pointer-events","auto");
 	  	var month = [
 			  "Jan",
 			"Feb",
@@ -515,6 +583,22 @@ var month = [
 //     // do that
 // }
 	  });
+
+
+    // $('#movebar').each(function(i)
+    // {
+    //     var lt = $(this).css('color');
+
+    //     if (lt=="white")
+    //         {
+    //         	$(".turnbuttr").css("pointer-events","none")
+    //         }
+    //    	else
+    //    		{
+    //         	$(".turnbuttr").css("pointer-events","auto")
+    //         }
+    // });
+
 
 	$(".turnbuttr").click(function(event)
 	  {
