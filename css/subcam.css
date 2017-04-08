@@ -152,8 +152,9 @@
     float: right;
     font-size: 23px;
     color: white;
-    font-family: kar;
-    font-size: 1.85vw;}
+    font-family: nin;
+    font-size: 2.1vw;
+    margin-top: -1%;}
 
     #cam1{background-color:#ff7300;}
     #cam2{background-color: #3592b4;}
@@ -237,16 +238,18 @@ font-size: 0vw}
 }
     
 #title {
+
     color: white;
-    font-family: kar;
-    font-size: 1.05vw;
+    font-family: nin;
+    font-size: 1.5vw;
     display: inline-block;
     margin-left: 5%;
     margin-top: .5%;
     /* float: left; */
     text-align: left;
     position: fixed;
-    z-index: 200;
+    z-index: 200;    
+    display: none;
 }
 
 .answers{color: #FF7300;}
