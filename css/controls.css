@@ -107,7 +107,7 @@
 
 
     .turnbutt{
-            background-color: rgb(96, 95, 95);
+            background-color: rgb(14, 14, 14);
         background-image:url(forw.svg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -118,8 +118,8 @@
     width:4%;
     cursor:pointer}
 
-    .turnbuttr{background-image:url(back.svg);
-                    background-color: rgb(96, 95, 95);
+    .turnbuttr{background-image:url(back2.svg);
+                    background-color: rgb(14,14,14);
         background-size: 100% 100%;
         background-repeat: no-repeat;
     display:inline-block;
