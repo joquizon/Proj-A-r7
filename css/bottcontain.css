@@ -56,11 +56,16 @@ background-color: rgb(14,14,14);
      -webkit-transition: width .5s;
     transition: width .5s;}
 
-    #lander    {width:20%;
-    height: 60px;
+    #lander    {
+            width: 10%;
+    height: 5vw;
     position: absolute;
     z-index: 5000;
-    background-color:red;}
+    background-color: red;
+    display: none;
+    margin-top: 20%;
+    margin-left: 45%;
+    }
 
 
     #boxer{    
@@ -92,34 +97,35 @@ background-color: rgb(14,14,14);
     transition: width .5s, margin-left .5s;}
 
 
-    .notifpos2{
-    pointer-events: none;
-    display: none;   
+    .notifpos2{pointer-events: none;
+    display: none;
     font-size: 36px;
     color: #3fdd00;
-    font-family: kar;
+    font-family: nin;
     z-index: 20;
     position: absolute;
     padding: 0%;
     background-color: rgba(255, 255, 255, 0.25);
-    margin-left: 66.25%;
+    margin-left: 70%;
     -webkit-transition: margin-top .5s, margin-left .5s, background-color 1s linear;
     transition: margin-top .5s, margin-left .5s, background-color 1s linear;
     font-size: 2.4vw;}
 
-    .notifpos{
-    pointer-events: none;
-    display: none;  
+
+
+.notifpos{pointer-events: none;
+    display: none;
     z-index: 20;
     position: absolute;
-    padding: 2%;
+    padding: .5%;
     background-color: rgba(0,161,110,0.85);
-    margin-left: 22%;
+    margin-left: 29.5%;
     margin-top: 17%;
     font-size: 89px;
     color: #3fdd00;
-    font-family: kar;
+    font-family: nin;
     font-size: 4.65vw;}
+
 
 
 #crosscontain{
