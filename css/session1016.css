@@ -57,7 +57,80 @@
 @font-face {font-family: helvb;
             src:url(helvb2.otf) ; }      
 
-body{background-color:rgb(14, 14, 14);}
+body{background-color:rgb(230,230,230);}
+
+    #wordmark{
+    width: 18%;
+    margin-top: 4.5%;
+    margin-left: 9.25%;}
+
+    #note{
+font-family: nin;
+    font-size: 1.2vw;
+    margin-left: 6%;
+    margin-top: 4%;
+}
+
+#buttoncontainer{    width: 14%;}
+
+#turnholder    {float: left;
+    width: 100%;
+}    
+.Xturnbutt{
+background-color: rgb(240, 240, 240);
+    background-image: url(forwX.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    height: 1.7vw;
+    margin-left: 5%;
+    width: 28%;
+    margin-top: 12%;}
+
+    #Xtop2{background-image:url(back2X.svg);}
+    #Xtop1{
+    margin-left: 12%;
+}
+
+.Xscreencont{margin-left: 7%;
+    width: 20%;
+    margin-right: 2%;
+    margin-top: 5%;}
+
+#Xbuttonholder    
+{ width: 70%;
+    float:left;
+    height: 1vw;
+    margin-top: 5%;}
+
+#Xdub{margin-left: 14%;}
+#Xgrid4{margin-left: 14%;}
+
+
+        #Xartbutton{
+    width: 22%;
+    height: 2.47vw;
+    float: left;
+    margin-top: 4%;
+    margin-left: 7%;
+}
+
+    #Xartlabel{color: #4C6861;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 6vw;}
+
+.desc{
+    margin-left: 7%;
+    float: left;
+    font-family: nin;
+    font-size: 1.1vw;}
+
+
+#butthead{width:100%;
+color:red;
+font-size: 1.2vw}
 
 .loader {
     position: fixed;
@@ -69,13 +142,51 @@ body{background-color:rgb(14, 14, 14);}
     background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
-#wrdmrk {
+   #Xcam0{    width: 20%;
+    height: 1.85vw;
+    background-color: #ff7300;
+    margin-top: 22%;
+    margin-left: 46%;}
+
+.Xcambutts{    width: 2vw;
+    height: 1.85vw;
+    background-color: #ff7300;
+    margin-top: 8%;
+    margin-left: 8%;
+    float: left;}
+
+#Xcambutthold{
+margin-left: 2%;
+    width: 35%;
+    font-size: 1.5vw;
+    font-family: nin;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+    /* float: left; */
+    /* margin-left: 5%; */
+    margin-top: 96%;}
+
+ 
+    #Xcam1{background-color:#7EB6CB;}
+    #Xcam2{background-color: #3592b4;}
+    #Xcam3{background-color:#387991;}
+    #Xcam4{background-color:#395b68;}
+
+
+
+
+
+
+
+/*#wrdmrk {
     position: fixed;
     bottom: 1%;
     right: 1%;
 
     z-index: 1;
-}
+}*/
+
+
 
 .close{height:15%;
 	width:15%;}
