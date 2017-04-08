@@ -25,12 +25,12 @@
     transition: width .5s;}*/
 
     #botcontainer2 {
-    background-color: rgb(14,14,14);
+background-color: rgb(14,14,14);
     width: 100%;
-     position: fixed;.
-     bottom:30%;
-     -webkit-transition: width .5s;
-    transition: width .5s;}
+    position: fixed;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+    margin-top: 8%;}
 
     #botcontainer3 {
     background-color: rgb(14,14,14);
