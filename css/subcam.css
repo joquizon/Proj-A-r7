@@ -144,6 +144,7 @@
     float: right;
     height: 100%;
     width: 6%;
+    color:white;
     display: inline-block;
     -webkit-transition: width .5s;
     transition: width .5s;}
