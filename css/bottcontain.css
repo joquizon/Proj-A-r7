@@ -57,14 +57,16 @@ background-color: rgb(14,14,14);
     transition: width .5s;}
 
     #lander    {
-            width: 10%;
+    width: 10%;
     height: 5vw;
-    position: absolute;
+    position: fixed;
     z-index: 5000;
-    background-color: red;
+    background-color: gray;
     display: none;
-    margin-top: 20%;
-    margin-left: 45%;
+    /* margin-top: -10%; */
+    /* margin-left: 45%; */
+    top: 40%;
+    left: 45%;
     }
 
 
