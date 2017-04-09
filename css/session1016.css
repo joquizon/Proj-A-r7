@@ -57,27 +57,38 @@
 @font-face {font-family: helvb;
             src:url(helvb2.otf) ; }      
 
-body{background-color:rgb(230,230,230);}
+body{background-color:black;}
 
-    #wordmark{
-    width: 18%;
-    margin-top: 4.5%;
-    margin-left: 9.25%;}
-
-    #note{
-font-family: nin;
-    font-size: 1.2vw;
-    margin-left: 6%;
-    margin-top: 4%;
+    #wordmark {
+    width: 3%;
+    margin-top: 0.25%;
+    margin-left: 1%;
 }
 
-#buttoncontainer{    width: 14%;}
+    #note
+{
+    color:white;
+    font-family: nin;
+    font-size: 1.2vw;
+    margin-left: .5%;
+    margin-top: 2%;
+}
 
-#turnholder    {float: left;
-    width: 100%;
-}    
+#buttoncontainer{    
+    color:white;
+    position: fixed;
+    width: 14%;
+    bottom: 10%;}
+
+#firstbutt{
+    width: 80%;
+}
+#camtitle{width:100%;}
+#turnholder{
+    float: left;
+    width: 62%;}    
 .Xturnbutt{
-background-color: rgb(240, 240, 240);
+background-color: black;
     background-image: url(forwX.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -85,16 +96,16 @@ background-color: rgb(240, 240, 240);
     float: left;
     height: 1.7vw;
     margin-left: 5%;
-    width: 28%;
+    width: 25%;
     margin-top: 12%;}
 
     #Xtop2{background-image:url(back2X.svg);}
     #Xtop1{
-    margin-left: 12%;
+    margin-left: 9%;
 }
 
-.Xscreencont{margin-left: 7%;
-    width: 20%;
+.Xscreencont{    margin-left: 7%;
+    width: 25%;
     margin-right: 2%;
     margin-top: 5%;}
 
@@ -102,10 +113,10 @@ background-color: rgb(240, 240, 240);
 { width: 70%;
     float:left;
     height: 1vw;
-    margin-top: 5%;}
+    margin-top: 10%;}
 
-#Xdub{margin-left: 14%;}
-#Xgrid4{margin-left: 14%;}
+#Xdub{margin-left: 6%;}
+#Xgrid4{margin-left: 6%;}
 
 
         #Xartbutton{
@@ -119,18 +130,30 @@ background-color: rgb(240, 240, 240);
     #Xartlabel{color: #4C6861;
     font-family: arial;
     font-weight: bolder;
-    font-size: 6vw;}
+    font-size: 5vw;}
 
 .desc{
+        width: 38%;
     margin-left: 7%;
     float: left;
     font-family: nin;
     font-size: 1.1vw;}
 
+.desc2{
+        width: 38%;
+    margin-left: 0%;
+    float: left;
+    font-family: nin;
+    font-size: 1.1vw;}
+#bareui{
+    margin-left: 7%;
+}
+#cambuttons{width:100%;}
 
 #butthead{width:100%;
-color:red;
-font-size: 1.2vw}
+margin-left: 5%;
+font-size: 1.25vw;
+    color: red;}
 
 .loader {
     position: fixed;
@@ -142,11 +165,20 @@ font-size: 1.2vw}
     background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
-   #Xcam0{    width: 20%;
-    height: 1.85vw;
+   #Xcam0{width: 25%;
+    height: 1.655vw;
     background-color: #ff7300;
-    margin-top: 22%;
-    margin-left: 46%;}
+    margin-top: 26%;
+    margin-left: 42%;
+    margin-bottom: 3%;}
+
+    #active{
+    margin-left: -2%;
+}
+
+#forward{
+    margin-left: -5%;
+}
 
 .Xcambutts{    width: 2vw;
     height: 1.85vw;
@@ -156,7 +188,7 @@ font-size: 1.2vw}
     float: left;}
 
 #Xcambutthold{
-margin-left: 2%;
+    margin-left: 1%;
     width: 35%;
     font-size: 1.5vw;
     font-family: nin;
@@ -164,7 +196,7 @@ margin-left: 2%;
     transition: width .5s;
     /* float: left; */
     /* margin-left: 5%; */
-    margin-top: 96%;}
+    margin-top: 107%;}
 
  
     #Xcam1{background-color:#7EB6CB;}
