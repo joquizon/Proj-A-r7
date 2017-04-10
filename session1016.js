@@ -2,10 +2,59 @@ $(document).ready(function()
 {
 
 	$(window).load(function() {
-	$("#lander").show();
+	$("#lander").css("pointer-events","auto");
 });
 
-				
+
+	$("#helpbutt").click(function(event)
+		{
+			var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+			$("#log").scrollTop(0);
+			
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#helplog").clone(true).attr("class","logshow").prependTo("#log");
+					$(this).css("pointer-events","none");
+						$("#buttoncontainer").css("margin-left","0%");
+			// $("#buttoncontainer").css("z-index","1000");
+			$("#buttoncontainer").attr("id","buttoncontainerA");
+			$("#helpx").show();
+		});
+
+	$("#helpx").click(function(event)
+		{
+			$("#helpx").hide();
+			$("#helpbutt").css("pointer-events","auto");
+			$("#buttoncontainerA").attr("id","buttoncontainer");
+									$("#buttoncontainer").css("margin-left","-200%");
+		});		
+
+
 // can you do mousediag1 on .maedabox
 	console.log("run");
 
@@ -65,8 +114,8 @@ var month = [
 		 //        $("#notif").text("ACTIVE")
 		 //        next(); 
 		 //      });
-		    $(".notifpos2").fadeIn(200);
-		    					$("#crosscontain").css("opacity","1");
+		    // $(".notifpos2").fadeIn(200);
+		    // 					$("#crosscontain").css("opacity","1");
 		    $("#cam").css("color","#3fdd00");
 		});
 	
@@ -105,8 +154,10 @@ var month = [
 					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
 					$("#systemstart").clone(true).attr("class","logshow").prependTo("#log");
 
-
-			$("#botcontainer").show();
+			$("#wordmark,#note").fadeOut();
+			$("#buttoncontainer").css("margin-left","-200%");
+			$("#helpbutt").fadeIn(200);
+			$("#botcontainer").fadeIn(200);
 			$("body").css("background-color","rgb(14,14,14)");
 
 			$(".stGL").attr("class","stGL2");	
@@ -376,7 +427,7 @@ var month = [
 					$(".crosslabs").text("0 / 0");
 					$(".crosslabsM").text("0 / 0");
 					$(".crosslabsB").text("0 / 0");
-					$(".notifpos2").fadeOut(200);
+					// $(".notifpos2").fadeOut(200);
 					$("#crosscontain,#crosscontain1,#crosscontainA").css("opacity",".5");
 					$("#boxer,#boxer1,#boxerA").css("opacity",".25");
 					$("#cam").css("color","white");
@@ -1368,6 +1419,64 @@ $(".maedaboxA").attr("class","maedabox2");
 
 
 
+$("#artbutton").click(function()
+	{			var month = [
+			  "Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			 "May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"];
+					var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+			var currentTime = new Date ( );
+			var td = currentTime.getDate();
+			var tm = currentTime.getMonth();
+			var ty = currentTime.getFullYear();
+			var tdy = currentTime.getDay();
+			var th = currentTime.getHours();
+			var tmt = currentTime.getMinutes();
+			var ts = currentTime.getSeconds();
+			var tmm = currentTime.getTime();
+			var monthL = month[tm]
+			var day = day[tdy]
+			var browser = "BROWSER// "+ navigator.appName + " "+navigator.appCodeName;
+			var timelist = td +" "+monthL+" "+ty+" "+ day +" "+ th +"'"+ tmt +"''"+ ts+ "'''";
+		console.log("we good");
+		$(this).hide();
+		$("#grid4").show();
+		$(".maedabox,.maedabox2,#wrdmrk,#infotag,#cam,#boxer,#notif,#crosscontain,.screencont").hide();
+		$("#boxer,#crosscontain").css("margin-left","-200%");
+		$("body").css("background-color","rgb(16, 16, 16)");
+				$("#botcontainer").attr("id","botcontainer5");
+		$("#mainrobotcontainer").css("margin-left", "12.5%"); 
+		$("#subbutthold").attr("id","subbuttholdB");
+				$("#butthold").attr("id","buttholdB");
+				$("#grid4").css("width","4%");
+					$("#baretime").clone(true).attr("class","logshow").html(timelist).prependTo("#log");
+					$("#bare").clone(true).attr("class","logshow").prependTo("#log");
+					
+
+	});
+
+$("#grid4").click(function()
+	{
+		console.log("we good too");
+		$(this).hide();
+		$("#artbutton").show();
+		$(".maedabox,.maedabox2,#logo,#wrdmrk,#infotag,#cam,#boxer,#notif,#crosscontain,.screencont").show();
+		$("#boxer,#crosscontain").css("margin-left","0%");
+		$("body").css("background-color","rgb(14, 14, 14)");
+				$("#botcontainer5").attr("id","botcontainer");
+		$("#mainrobotcontainer").css("margin-left", "0%"); 
+		$("#subbuttholdB").attr("id","subbutthold");
+				$("#buttholdB").attr("id","butthold");
+	});
 
 
 // $("#Mrk").click(function()
