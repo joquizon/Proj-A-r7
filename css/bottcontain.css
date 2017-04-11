@@ -13,7 +13,7 @@
     background-color: rgb(14,14,14);
     width: 100%;
      position: fixed; 
-    bottom:5%;
+    bottom:2%;
     -webkit-transition: width .5s, margin-left .5s;
     transition: width .5s, margin-left .5s;}
 
@@ -42,7 +42,7 @@ background-color: rgb(14,14,14);
 
     #botcontainer4 {
     background-color: rgb(14,14,14);
-    width: 100%;
+    width: 90%;
      position: fixed;
          bottom:0%;
      -webkit-transition: width .5s;
@@ -57,17 +57,19 @@ background-color: rgb(14,14,14);
     transition: width .5s;}
 
     #lander    {
+    cursor:pointer;
+    pointer-events:none;
     width: 10%;
     height: 5vw;
     position: fixed;
     z-index: 5000;
-    background-color: gray;
-    display: none;
     /* margin-top: -10%; */
     /* margin-left: 45%; */
-    top: 40%;
+    top: 47%;
     left: 45%;
     }
+
+#loadercontain{width:100%;}
 
 
     #boxer{    
