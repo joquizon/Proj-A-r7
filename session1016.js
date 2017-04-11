@@ -2,7 +2,16 @@ $(document).ready(function()
 {
 
 	$(window).load(function() {
-	$("#lander").css("pointer-events","auto");
+	$("#tape1").attr("id","tape1A").delay(2000).fadeOut(200);
+		$("#tape2").attr("id","tape2A").delay(2000).fadeOut(200);
+		$("#loading").html("ready").delay(2000).fadeOut(100).delay(10)
+      .queue( function(next)
+      { 
+       $("#loaded").show();
+        next(); 
+      })
+	$("#loaded").css("pointer-events","auto");
+
 });
 
 
@@ -119,8 +128,8 @@ var month = [
 		    $("#cam").css("color","#3fdd00");
 		});
 	
-	// temp Charger
-	$("#lander").click(function()
+
+	$("#loaded").click(function()
 		{
 			var month = [
 			  "Jan",
