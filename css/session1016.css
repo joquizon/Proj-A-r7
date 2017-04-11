@@ -57,7 +57,71 @@
 @font-face {font-family: helvb;
             src:url(helvb2.otf) ; }      
 
-body{background-color:black;}
+body{background-color:rgb( 20,20,20);
+    -webkit-transition: background-color 500ms ease-out 500ms;
+    -moz-transition: background-color 500ms ease-out 500ms;
+    -o-transition: background-color 500ms ease-out 500ms;
+    transition: background-color 500ms ease-out 500ms;}
+
+#tape1{    
+    width:40%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#tape2{   
+    margin-left: 17%;
+    width: 40%;
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+#tape1A{    
+    width:40%;
+    -webkit-animation:spin 1s linear 2;
+    -moz-animation:spin 1s linear 2;
+    animation:spin 1s linear 2;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(3600deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(3600deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(3600deg); transform:rotate(360deg); } }
+
+#tape2A{   
+    margin-left: 17%;
+    width:40%;
+    -webkit-animation:spin 1s linear 2;
+    -moz-animation:spin 1s linear 2;
+    animation:spin 1s linear 2;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(3600deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(3600deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(3600deg); transform:rotate(360deg); } }
+
+#loading{
+    color:white;
+    text-align: center;
+    font-family: nin;
+    font-size: 1.2vw;
+}
+
+#loaded{
+    margin-left: 32%;
+    width: 36%;
+    display: none;
+    color: orange;
+    text-align: center;
+    font-family: nin;
+    font-size: 1.5vw;
+}
 
     #wordmark {
     width: 3%;
@@ -65,8 +129,34 @@ body{background-color:black;}
     margin-left: 1%;
 }
 
-    #note
-{
+#helpbutt{
+    cursor: pointer;
+    display: none;
+    color: white;
+    font-family: nin;
+    font-size: 2vw;
+    position: fixed;
+    right: 0%;
+    background-color: rgb(255,0,86);
+    width: 2%;
+    text-align: center;}
+
+#helpx{
+    cursor: pointer;
+    display: none;
+    font-weight: 600;
+    color: rgb(255,0,86);
+    font-family: nin;
+    font-size: 2vw;
+    position: fixed;
+    left: 6%;
+    background-color: white;
+    width: 1.5%;
+    text-align: center;
+    height: 2vw;
+    /* z-index: -2; */}
+
+    #note{
     color:white;
     font-family: nin;
     font-size: 1.2vw;
@@ -78,7 +168,15 @@ body{background-color:black;}
     color:white;
     position: fixed;
     width: 14%;
-    bottom: 10%;}
+    bottom: 4%;}
+
+#buttoncontainerA{   
+    color: #FF0056;
+    position: fixed;
+    width: 14%;
+    bottom: 40%;
+    margin-left: 2%;
+    z-index: 100;}    
 
 #firstbutt{
     width: 80%;
@@ -88,7 +186,6 @@ body{background-color:black;}
     float: left;
     width: 62%;}    
 .Xturnbutt{
-background-color: black;
     background-image: url(forwX.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -169,7 +266,7 @@ font-size: 1.25vw;
     height: 1.655vw;
     background-color: #ff7300;
     margin-top: 26%;
-    margin-left: 42%;
+    margin-left: 44%;
     margin-bottom: 3%;}
 
     #active{
