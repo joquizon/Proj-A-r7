@@ -54,20 +54,15 @@
     transition: width .5s;}
 
     .subID{
-    color: white;
-    position: absolute;
-    margin-top: 58%;
-    z-index: 30;
-    font-family: kar;
-    right: 1%;}
+    display: none;}
 
     .subID1{    color: white;
     position: absolute;
-    margin-top: 29.25%;
+    margin-top: 28.85%;
     z-index: 30;
-    font-family: kar;
+    font-family: nin;
     right: 1%;
-    font-size: 1.85vw;}
+    font-size: 2.1vw;}
 
 
 #switchfirst{background-color:#ff7300;}
@@ -201,7 +196,7 @@ font-size: 0vw}
     float: left;
     display: inline-block;
     font-size: 1.4vw;
-    color: #FF7300;
+    color: #838383;
     font-family: nin;
     margin-right: 0%;
     margin-left: 3%;
